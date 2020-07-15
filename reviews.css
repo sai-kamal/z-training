@@ -1,0 +1,256 @@
+body {
+    font-family: Okra,Helvetica,sans-serif;
+    max-width: 60%;
+    position: relative;
+    left: 20%;
+}
+
+header, footer {
+    text-align: center;
+    background-color: #ED5A6B;
+    color: white;
+    border-radius: 10px;
+}
+
+header {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin-bottom: 1vh;
+}
+
+footer {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin-top: 1vh;
+}
+
+#reviews_root {
+    display: flex;
+}
+
+#reviews_root > section {
+    margin-right: 2vw;
+}
+
+#reviews_head {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    color: rgb(28, 28, 28);
+    font-weight: 500;
+    margin: 0px;
+}
+
+#filter_sort {
+    display: flex;
+    justify-content: space-between;
+}
+
+#filtering, #sorting {
+    display: flex;
+}
+
+.dropdown_and_arrow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 4.8rem;
+    cursor: pointer;
+    border-radius: 0.6rem;
+}
+
+#filter_dropdown, #sort_dropdown {
+    margin-right: 1vw;
+}
+
+#sort_dropdown {
+    margin-left: 0.25vw;
+}
+
+.dropdown_content {
+    display: none;
+    margin-top: 1vh;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    border-radius: 5px;
+    /* box-shadow: 5px 5px 8px #888888; */
+    box-shadow: 1px 1px 5px 1px #8888885b, 1px 1px 5px 1px #8888885b;
+
+}
+
+.dropdown_and_arrow:hover .dropdown_content {
+    display: block;
+}
+
+.dropdown_content a {
+    color: rgb(54, 54, 54);
+    padding: 1.2vh;
+    margin: 1vh;
+    text-decoration: none;
+    display: block;
+    overflow: hidden;
+    /* font-size: 1.25rem; */
+    line-height: 1.5;
+}
+
+.dropdown_content a:hover {
+    background-color: rgba(134, 208, 211, 0.582);
+}
+
+#number_reviews {
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(54, 54, 54);
+    overflow: hidden;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+#detailed_reviews {
+    margin-top: 1vh;
+}
+
+.one_review {
+    border-bottom: 1px solid ;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile_details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_details .profile_pic {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile_details .profile_name {
+    margin-left: 1vw;
+}
+
+.profile_details .profile_name a {
+    text-decoration: none;
+}
+
+.profile_details .profile_name p {
+    color: rgb(54, 54, 54);
+    font-size: 1.1rem;
+    margin: 0px 0px 0.2rem;
+}
+
+.profile_stats {
+    display: flex;
+}
+
+.profile_rev_fol {
+    color: rgb(156, 156, 156);
+    display: flex;
+    align-items: center;
+}
+
+.followers::before {
+    content: "";
+    width: 0.4rem;
+    height: 0.4rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: rgb(156, 156, 156);
+    margin: 0px 0.5rem;
+}
+
+.follow_button {
+    text-align: center;
+    color: #ED5A6B;
+    cursor: pointer;
+    padding: 0 1vw;
+    max-height: 6vh;
+    border-radius: 0.6rem;
+    background: transparent;
+    border: 1px solid #ED5A6B;
+}
+
+.follow_button span {
+    font-size: 1rem;
+}
+
+.review_rating, .stars_and_number {
+    display: flex;
+    align-items: center;
+}
+
+.review_stars {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review_star {
+    flex: 1;
+    margin: 3%;
+}
+
+/* .rev_star_svg {
+    display: inline-flex;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+} */
+
+.review_number {
+    color: rgb(54, 54, 54);
+    font-weight: 500;
+    margin-left: 30%;
+}
+
+.review_time {
+    margin-left: 6%;
+    color: rgb(156, 156, 156);
+}
+
+
+
+
+#rating_exp {
+    padding-left: 2%;
+    border-radius: 5px;
+    max-height: 15vh;
+    box-shadow: 0px 0px 5px 1px #8888885b, 0px 0px 5px 1px #8888885b;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clear_rating {
+    margin-right: 2vw;
+}
+
+/* .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flex-container > div {
+    margin: 1vw;
+}
+
+.clear-rating button {
+    border: none;
+    color: rgba(16, 16, 16, 0.3);
+    background-color: inherit;
+}
+
+.clear-rating button span{
+    font-size: 1rem;
+    font-weight: bolder;
+} */
