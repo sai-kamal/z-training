@@ -1,2 +1,113 @@
-.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
-.gm-style img{max-width: none;}.gm-style {font: 400 11px Roboto, Arial, sans-serif; text-decoration: none;}
+.slist{
+    list-style-type: none;
+    font-size: large;
+    float: left;
+}
+
+.leftbar{
+    position: fixed;
+    /* z-index: 1; */
+    overflow-x: hidden;
+    display: block;
+    width: 20%;
+    border-right: 3px solid;
+    border-image:linear-gradient(transparent, rgb(211,211,211), transparent) 2;
+}
+
+.rlist{
+    margin-left: 20%;
+}
+a{
+    text-decoration: none;
+    color: #363636;
+    opacity: 73%;
+}
+
+li{
+    padding: 15px 15px 15px 0;
+}
+
+li:hover{
+    /* background-color: aqua; */
+    background-image: linear-gradient(transparent, rgb(211,211,211), transparent) 2;
+    border-right: 3px solid brown;
+}
+
+li a:visited{
+    width: max-content;
+    border-right: 3px solid red;
+    background-color: bisque;
+}
+
+.items{
+    list-style-type: none;
+    float: left;
+}
+
+.obox{
+    margin-left: 30px;
+    border-bottom: 3px solid grey;
+}
+
+.ig{
+    margin: 5px 10px 0 5px;
+    width: 125px;
+    height: 125px;
+    border-radius: 9px;
+}
+.box{
+    height: fit-content;
+    margin-bottom: 10px;
+}
+.info{
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    width: 50%;
+}
+.votes{
+    color : silver;
+}
+.press{
+    color : grey;
+    font-size: 17px;
+}
+.price{
+    color : black;
+    font-size: 18px;
+    opacity: 70%;
+}
+h2{
+    margin: -10px 0 0 0;
+    text-decoration: none;
+    text-emphasis: none;
+}
+.adder{
+    display: inline-block;
+    width: fit-content;
+    vertical-align: top;
+    right: 0px;
+    /* float: right; */
+}
+.add_btn{
+    width: 80px;
+    height: 45px;
+    border: 0 solid grey;
+    border-radius: 9px;
+}
+
+.srbox{
+    width: min-content;
+    height: 35px;
+    font-size: medium;
+    color: grey;
+}
+
+@media screen and (max-width: 450px){
+    .leftbar{
+        width: 25%;
+    }
+    .slist{
+        font-size: smaller;
+    }
+}
