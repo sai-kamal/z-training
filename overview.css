@@ -1,0 +1,76 @@
+.zomato_gold_offer{
+    width: max-content;
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    background: rgb(237, 90, 107);
+    border-radius: 0.6rem;
+    padding: 0.6rem 0.8rem;
+}
+
+.zomato_gold{
+    font-size: 1.4rem;
+    background: rgb(230, 230, 230);
+    border-radius: 0.6rem;
+    padding: 0.6rem 0.8rem;
+}
+.about_place_p_con1{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgb(156, 156, 156);
+    margin: 0px;
+}
+.about_place_p_con2{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: rgb(28, 28, 28);
+    margin: 0.2rem 0px 0px;
+}
+.about_place_con{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.06) 1px 0px 4px;
+    cursor: pointer;
+    margin-right: 2rem;
+    border-radius: 8px;
+    padding: 0.9rem 0.7rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(232, 232, 232);
+    border-image: initial;
+}
+.a_p_content{
+    display: flex;
+    width: max-content;
+}
+
+.overview_right{
+    box-sizing: border-box;
+    box-shadow: rgba(28, 28, 28, 0.12) 0px 2px 8px;
+    margin-left: 3rem;
+    width: 35rem;
+    height: fit-content;
+    position: sticky;
+    top: 250px;
+    background: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(248, 248, 248);
+    border-image: initial;
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+.check{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    
+}
+.overview_left {
+    width: 47rem;
+}
+.o_r{
+    display: flex;
+}
