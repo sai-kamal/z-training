@@ -1,26 +1,26 @@
 .zomato_gold_offer{
     width: max-content;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: rgb(255, 255, 255);
     background: rgb(237, 90, 107);
     border-radius: 0.6rem;
-    padding: 0.6rem 0.8rem;
+    padding: 1px 3px;
 }
 
 .zomato_gold{
-    font-size: 1.4rem;
-    background: rgb(230, 230, 230);
+    font-size: 1.2rem;
+    background: rgb(250, 250, 250);
     border-radius: 0.6rem;
-    padding: 0.6rem 0.8rem;
+    padding: 0.4rem 0.6rem;
 }
 .about_place_p_con1{
-    font-size: 1rem;
+    font-size: 0.6rem;
     line-height: 1.5;
     color: rgb(156, 156, 156);
     margin: 0px;
 }
 .about_place_p_con2{
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     line-height: 1.5;
     color: rgb(28, 28, 28);
     margin: 0.2rem 0px 0px;
@@ -31,7 +31,7 @@
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.06) 1px 0px 4px;
     cursor: pointer;
-    margin-right: 2rem;
+    margin-right: 1rem;
     border-radius: 8px;
     padding: 0.9rem 0.7rem;
     border-width: 1px;
@@ -41,7 +41,6 @@
 }
 .a_p_content{
     display: flex;
-    width: max-content;
 }
 
 .overview_right{
@@ -51,7 +50,7 @@
     width: 35rem;
     height: fit-content;
     position: sticky;
-    top: 250px;
+    top: 50px;
     background: rgb(255, 255, 255);
     border-width: 1px;
     border-style: solid;
@@ -64,13 +63,40 @@
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
     
 }
 .overview_left {
-    width: 47rem;
+    width: 85rem;
 }
 .o_r{
     display: flex;
+}
+.cuisines_type{
+    box-shadow: rgba(54, 54, 54, 0.06) 0px 1px 2px;
+    display: inline-flex;
+    cursor: pointer;
+    color: rgb(17, 145, 153);
+    font-size: 1rem;
+    line-height: 1.2;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(207, 207, 207);
+    border-image: initial;
+    border-radius: 59px;
+    padding: 0.8rem;
+    margin: 0px 1rem 1rem 0px;
+    text-decoration: unset;
+}
+
+.more_info_item{
+    display: inline-flex;
+    margin-right:100px;
+}
+.image_biryani{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 0.6rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) 85%);
 }
