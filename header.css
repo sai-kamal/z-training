@@ -1,0 +1,153 @@
+
+body{
+    font-family: Okra,Helvetica,sans-serif;
+    display: block;
+    overflow: auto;
+    font-size: 62.5%;
+    font-weight: 300;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    position: static;
+    height: 7.2rem;
+    justify-content: space-between;
+    align-items: center;
+    border-style: outset; 
+    border-width: 1px;
+    border-right: 0px;
+    /* border-bottom: 1px; */
+}
+.headerNav {
+    width:100%;
+    max-width: 110rem;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 4;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.headerList{
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    height: 72px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.searchBar{
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(232,232,232);
+    border-radius: 0.8rem;
+    box-shadow: rgba(28, 28, 28, 0.08) 0px 2px 8px;
+}
+.gallery{
+    display: flex;
+    width: 100%;
+    height: 37rem;
+}
+.galView1{
+    min-width: 62.4%;
+    max-width: 100%;
+    width: 62.4%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.galView2, .galView3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.6rem;
+
+}
+
+.galView2a, .galView2b, .galView3a{
+    min-width: 62.4%;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 0.3rem 0px 0.3rem
+}
+
+.galView3a1{
+    font-size: inherit;
+    line-height: 1.5;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 8rem;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+}
+.galView3b{
+    background-image: url(https://b.zmtcdn.com/data/zomaland/a6750d1….jpeg);
+    background-color: gray;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    margin: 0.3rem 0px 0.3rem;
+}
+
+.galView3b1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/* .galView2b{
+    min-width: 62.4%;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 0px 0px 0px
+} */
+
+*{
+    box-sizing: border-box;
+}
+section{
+    display: block;
+}
+div{
+    display: block;
+}
+div, p, span {
+    font-size: 1.3rem;
+}
