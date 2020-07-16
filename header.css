@@ -47,7 +47,7 @@ header{
     height: 72px;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
 }
