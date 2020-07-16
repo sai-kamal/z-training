@@ -112,6 +112,7 @@ footer {
 
 .one_review {
     border-bottom: 1px solid rgb(232, 232, 232);
+    margin-top: 2vh;
 }
 
 .profile {
@@ -306,6 +307,62 @@ footer {
     margin-right: 2vw;
 }
 
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 2vh;
+
+}
+
+.pagination div {
+    margin: 0.5vw;
+}
+
+.prev_page, .next_page {
+}
+
+.arrow {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 2vw;
+    height: 2vw;
+    text-decoration: none;
+    border-radius: 50%;
+    border-width: 0.2rem;
+    border-style: solid;
+    border-color: rgb(17, 145, 153);
+    border-image: initial;
+}
+
+.prev_arrow, .next_arrow {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: inherit
+}
+
+.page_num {
+    cursor: pointer;
+}
+
+.page_num > a {
+    text-decoration: none;
+}
+
+.prev_arrow_svg, .next_arrow_svg {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    width: 20px;
+    height: 20px;
+}
 /* .flex-container {
     display: flex;
     justify-content: center;
