@@ -9,13 +9,13 @@
     /* z-index: 1; */
     overflow-x: hidden;
     display: block;
-    width: 20%;
+    width: 240px;
     border-right: 3px solid;
     border-image:linear-gradient(transparent, rgb(211,211,211), transparent) 2;
 }
 
 .rlist{
-    margin-left: 20%;
+    margin-left: 240px;
 }
 a{
     text-decoration: none;
@@ -41,7 +41,7 @@ li a:visited{
 
 .items{
     list-style-type: none;
-    float: left;
+    /* float: left; */
 }
 
 .obox{
@@ -81,18 +81,17 @@ h2{
     margin: -10px 0 0 0;
     text-decoration: none;
     text-emphasis: none;
+    
 }
 .adder{
-    display: inline-block;
-    width: fit-content;
-    vertical-align: top;
-    right: 0px;
-    /* float: right; */
+    float: right;
+    margin-right: 18px;
 }
 .add_btn{
-    width: 80px;
-    height: 45px;
-    border: 0 solid grey;
+    width: 85px;
+    height: 32px;
+    border: 0.5px solid grey;
+    background-color: white;
     border-radius: 9px;
 }
 
@@ -102,6 +101,18 @@ h2{
     font-size: medium;
     color: grey;
 }
+
+.rsm{
+    color: red;
+    font-size: small;
+}
+
+.rplus{
+    display: inline;
+    color: red;
+    font-size: large;
+}
+
 
 @media screen and (max-width: 450px){
     .leftbar{
