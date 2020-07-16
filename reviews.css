@@ -111,7 +111,7 @@ footer {
 }
 
 .one_review {
-    border-bottom: 1px solid ;
+    border-bottom: 1px solid rgb(232, 232, 232);
 }
 
 .profile {
@@ -191,8 +191,8 @@ footer {
 }
 
 .review_star {
-    flex: 1;
-    margin: 3%;
+    /* flex: 1; */
+    margin: 0px 3%;
 }
 
 /* .rev_star_svg {
@@ -213,8 +213,82 @@ footer {
     color: rgb(156, 156, 156);
 }
 
+.review_sign {
+    display: flex;
+    /* margin-bottom: 1vh; */
+}
 
+.thumb_sign {
+    display: flex;
+    /* -webkit-box-align: center; */
+    align-items: center;
+    cursor: inherit;
+}
 
+.desc_sign {
+    color: rgb(80, 181, 71);
+    margin-left: 0.6vw;
+}
+
+.review_tags {
+    display: inline-flex;
+}
+
+.review_tag {
+    color: rgb(130, 130, 130);
+    margin: 0px;
+    font-size: 0.85rem;
+    box-shadow: none;
+    border-radius: 20px;
+    padding: 1vh 1vw;
+    background: rgb(232, 232, 232);
+}
+
+.review_comment {
+    color: rgb(105, 105, 105);
+    overflow-wrap: break-word;
+}
+
+.comment_stats {
+    color: rgb(156, 156, 156);
+    margin: 0px;
+}
+
+.cta {
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+
+.lcs {
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 1vh 0.5vw;
+    padding-left: 0%;
+    border-radius: 6px;
+    margin-right: 2vw;
+}
+
+.lcs_symbol {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: inherit;
+}
+
+/* .lcs_symbol.svg, comment_symbol_svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+} */
+
+.desc_lcs {
+    color: rgb(156, 156, 156);
+    margin: 0px 0px 0px 0.5vw;
+}
 
 #rating_exp {
     padding-left: 2%;
