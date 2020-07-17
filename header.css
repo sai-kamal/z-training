@@ -157,6 +157,7 @@ header{
     background-color: white;
     padding: 0.5rem;
     border-width: 0.5px;
+    cursor: pointer;
 }
 .reviewButton{
     border-radius: 0.5rem;
@@ -166,6 +167,13 @@ header{
     padding: 0.5rem;
     border-width: 0.5px;
     border-color: lightpink;
+    cursor: pointer;
+}
+.reviewButton:hover{
+    background-color: rgb(231, 140, 155);
+}
+.connectButton:hover{
+    background-color: rgb(226, 222, 222);
 }
 
 .actionNavigator{
@@ -184,14 +192,27 @@ header{
     padding: 1rem;
     color: gray;
     text-align: center;
-    /* transition: 0.3s; */
+    transition: 0.3s;
 }
+
+.actionTab a{
+    color: gray;
+}
+
 .actionTab:hover{
     /* color: lightpink; */
-    background-color: lightpink;
+    background-color: rgb(243, 211, 216);
 }
 
+div.relatedLinks a{
+    color: gray;
+    font-size: medium;
+    transition: 0.2s;
+}
 
+div.relatedLinks a:hover{
+    color: rgb(65, 63, 63);
+}
 
 img{
     /* max-width: 100%;
