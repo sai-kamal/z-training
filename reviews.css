@@ -95,6 +95,7 @@ body {
 .one_review {
     border-bottom: 1px solid rgb(232, 232, 232);
     margin-top: 2vh;
+    display: none;
 }
 
 .profile {
