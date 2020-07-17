@@ -100,3 +100,46 @@
     border-radius: 0.6rem;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) 85%);
 }
+.overviewMenu{
+    width: 13rem   
+}
+.hide{
+    display:none;
+}
+.overview_photo{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(28, 28, 28);
+
+}
+.overviewMenuPhoto{
+    display: none;
+}
+.overviewPrev, .overviewNext{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .overviewNext {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .overviewSlideShow{
+    max-width: 300px;
+    position: relative;
+    margin: auto;
+  }
