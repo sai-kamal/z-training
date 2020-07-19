@@ -37,7 +37,7 @@ function changeListHead(e) {
 }
 
 // ---------------Pagination------------------
-var curPage = 2;
+var curPage = 1;
 var list = [1, 2, 3, 4];
 var curList = [];
 var reviewsPerPage = 2;

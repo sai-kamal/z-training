@@ -1,7 +1,4 @@
-<style>
-
-
-element.style {
+/* element.style {
     overflow: auto;
     background-color: transparent;
 }
@@ -12,38 +9,36 @@ html {
 
 main {
     display: block;
-}
+} */
 
-body, button, input, input::placeholder {
+/* body, button, input, input::placeholder {
 	    font-family: Okra,Helvetica,sans-serif;
-	}
+	} */
 
-
-
-body, html {
+/* body, html {
     margin: 0;
     padding: 0;
     font-size: 62.5%;
     font-weight: 300;
     box-sizing: border-box;
-}
+} */
 
-body {
+/* body {
     display: block;
     margin: 8px;
 }
 
 section {
     display: block;
-}
+} */
 
 
-*, :after, :before {
+/* *, :after, :before {
     box-sizing: inherit;
     -webkit-tap-highlight-color: transparent;
-}
+} */
 
-ul {
+/* ul {
 	display: block;
     list-style-type: disc;
     margin-block-start: 1em;
@@ -70,9 +65,9 @@ h4 {
 }
 div {
     display: block;
-}
+} */
 
-a:-webkit-any-link {
+/* a:-webkit-any-link {
     color: -webkit-link;
     cursor: pointer;
     text-decoration: underline;
@@ -146,10 +141,9 @@ p {
 
 :not(svg) {
     transform-origin: 0px 0px;
-}
+} */
 
 @media (max-width: 900px) and (min-width: 768px)
-
 
 .fuwVFN {
     font-size: 2.4rem;
@@ -1544,7 +1538,9 @@ p {
     color: rgb(28, 28, 28);
     margin-block-end: 0px;
     font-weight: 500;
-    margin: 0px 0px 2.5rem;
+    margin: 0px 0px 1rem;
+    position: relative;
+    z-index: -1;
 }
 
 .biDcRr {
@@ -1602,9 +1598,9 @@ p {
 
 .hJwSen {
     position: relative;
-    max-width: 100%;
-    width: 100%;
-    height: 20rem;
+    /* max-width: 100%; */
+    width: 13.5rem;
+    height: 13.5rem;
     overflow: hidden;
 }
 
@@ -1926,7 +1922,7 @@ p {
     max-width: 110rem;
     width: 110rem;
     position: relative;
-    padding: 4.8rem 0px 2.2rem;
+    padding: 1rem 0px 1rem;
 }
 
 
@@ -2097,14 +2093,15 @@ p {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
+    justify-content: center;
     max-width: 100%;
     text-overflow: ellipsis;
     overflow: hidden;
 }
 
 .mtUrN {
-    width: 4.5rem;
-    height: 3.0015rem;
+    width: 2.5rem;
+    height: 1.0015rem;
     display: inline-block;
     transform: scale(0.488889);
     margin-left: -1.2rem;
@@ -2195,15 +2192,16 @@ p {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
+    justify-content: center;
 }
 
 
 .giRTmH {
-    font-size: 1.8rem;
-    line-height: 2rem;
+    /* font-size: 1.8rem; */
+    /* line-height: 2rem; */
     color: rgb(28, 28, 28);
     font-weight: 400;
-    margin: 0.2rem 0.5rem 0px 0.8rem;
+    /* margin: 0.2rem 0.5rem 0px 0.8rem; */
 }
 
 
@@ -2236,7 +2234,7 @@ p {
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     font-weight: 500;
-    margin: 0px 0px 1.2rem;
+    margin: 0px 0px 5px;
 }
 
 .evQfKr {
@@ -2247,7 +2245,8 @@ p {
     font-size: 1.4rem;
     line-height: 2.1rem;
     color: rgb(105, 105, 105);
-    margin: 0.5rem 0px;
+    margin: 0px 0px;
+    /* margin: 0.5rem 0px; */
 }
 
 .hSaZLv {

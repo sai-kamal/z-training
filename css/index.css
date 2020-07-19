@@ -1,0 +1,18 @@
+.hideSection {
+    display: none !important;
+}
+
+footer *{
+    font-size: 1rem !important;
+}
+
+footer {
+    box-sizing: border-box;
+    padding: 0px 12rem;
+    width: 100vw !important;
+}
+
+#photos_root *{
+    z-index: -1;
+    font-size: 1rem !important;
+}

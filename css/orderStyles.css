@@ -1,93 +1,102 @@
-.slist{
+#order_online_root {
+    display: flex;
+    justify-content: space-between;
+}
+
+#order_online_root .slist{
     list-style-type: none;
     font-size: large;
     float: left;
 }
 
-.leftbar{
-    position: fixed;
-    /* z-index: 1; */
+#order_online_root .leftbar{
+    position: sticky;
+    top: 35vh;
     overflow-x: hidden;
+    height: max-content;
     display: block;
-    width: 240px;
+    width: 300px;
     border-right: 3px solid;
     border-image:linear-gradient(transparent, rgb(211,211,211), transparent) 2;
+    z-index: -1;
 }
 
-.rlist{
-    margin-left: 240px;
+#order_online_root .rlist{
+    /* margin-left: 240px; */
 }
-a{
+#order_online_root a{
     text-decoration: none;
     color: #363636;
     opacity: 73%;
 }
 
-li{
+#order_online_root li{
     padding: 15px 15px 15px 0;
 }
 
-li:hover{
+#order_online_root li:hover{
     /* background-color: aqua; */
     background-image: linear-gradient(transparent, rgb(211,211,211), transparent) 2;
     border-right: 3px solid brown;
 }
 
-li a:visited{
+#order_online_root li a:visited{
     width: max-content;
     border-right: 3px solid red;
     background-color: bisque;
 }
 
-.items{
+#order_online_root .items{
     list-style-type: none;
     /* float: left; */
 }
 
-.obox{
+#order_online_root .obox{
     margin-left: 30px;
     border-bottom: 3px solid grey;
 }
 
-.ig{
+#order_online_root .ig{
     margin: 5px 10px 0 5px;
     width: 125px;
     height: 125px;
     border-radius: 9px;
 }
-.box{
+#order_online_root .box{
     height: fit-content;
     margin-bottom: 10px;
 }
-.info{
+#order_online_root .info{
     display: inline-block;
     vertical-align: top;
     margin: 10px;
     width: 50%;
 }
-.votes{
+#order_online_root .votes{
     color : silver;
 }
-.press{
+#order_online_root .press{
     color : grey;
     font-size: 17px;
 }
-.price{
+#order_online_root .price{
     color : black;
     font-size: 18px;
     opacity: 70%;
+    position: relative;
+    z-index: -1;
 }
-h2{
+#order_online_root h2{
     margin: -10px 0 0 0;
     text-decoration: none;
     text-emphasis: none;
     
 }
-.adder{
+#order_online_root .adder{
     float: right;
     margin-right: 18px;
 }
-.add_btn{
+#order_online_root .add_btn{
     width: 85px;
     height: 32px;
     border: 0.5px solid grey;
@@ -95,19 +104,19 @@ h2{
     border-radius: 9px;
 }
 
-.srbox{
+#order_online_root .srbox{
     width: min-content;
     height: 35px;
     font-size: medium;
     color: grey;
 }
 
-.rsm{
+#order_online_root .rsm{
     color: red;
     font-size: small;
 }
 
-.rplus{
+#order_online_root .rplus{
     display: inline;
     color: red;
     font-size: large;
@@ -115,10 +124,10 @@ h2{
 
 
 @media screen and (max-width: 450px){
-    .leftbar{
+    #order_online_root .leftbar{
         width: 25%;
     }
-    .slist{
+    #order_online_root .slist{
         font-size: smaller;
     }
 }
