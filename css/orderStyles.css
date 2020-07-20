@@ -1,6 +1,5 @@
 #order_online_root {
     display: flex;
-    justify-content: space-between;
 }
 
 #order_online_root .slist{
@@ -11,7 +10,7 @@
 
 #order_online_root .leftbar{
     position: sticky;
-    top: 35vh;
+    top: 25vh;
     overflow-x: hidden;
     height: max-content;
     display: block;

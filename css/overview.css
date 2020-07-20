@@ -47,10 +47,11 @@
     box-sizing: border-box;
     box-shadow: rgba(28, 28, 28, 0.12) 0px 2px 8px;
     margin-left: 3rem;
+    margin-right: 5px;
     width: 35rem;
     height: fit-content;
     position: sticky;
-    top: 38vh;
+    top: 28vh;
     z-index: -1;
     background: rgb(255, 255, 255);
     border-width: 1px;

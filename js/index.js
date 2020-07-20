@@ -1,19 +1,18 @@
 sections = ['overview', 'reviews', 'order_online', 'photos'];
 window.onload = () => {
-    sections.forEach(sect => {
-        let divID = '#' + sect + '_root';
-        if (sect === 'overview')
-            document.querySelector(divID).classList.remove('hideSection');
-        else
-            document.querySelector(divID).classList.add('hideSection');
-    });
+    hideNavTabs();
+    // REVIEWS
+    reviewsOnload();
+};
 
-    // reviews related - disabling a href redirection scroll effect
-    document.querySelectorAll('.pagination a').forEach(item => {
-        item.addEventListener('click', event => {
-            event.preventDefault();
-        })
-    });
+// hide restroConnect section when it becomes sticky
+window.onscroll = () => {
+    let threshold = document.querySelector("#about_restaurant").offsetTop;
+    if (Math.round(document.body.scrollTop) > threshold || Math.round(document.documentElement.scrollTop) > threshold) {
+        document.querySelector(".restroConnect").classList.add("hideSection");
+    } else {
+        document.querySelector(".restroConnect").classList.remove("hideSection");
+    }
 };
 
 //--------------navigation javascript functions--------------------------
