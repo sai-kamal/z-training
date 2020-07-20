@@ -17,7 +17,37 @@
 
     <body style="overflow:auto;">
         <!--everything comes inside this division-->
-        <div id="root">
+        <div id="loginModalBox" class="modal">
+            <div class="modalContent">
+                <div style="display: flex; justify-content: space-between;">
+                    <h2>Login</h2>
+                    <span class="close" onclick="modalClose()">&times;</span>
+                </div>
+                <button id="continueWithGoogle">Continue with Google</button>
+                <hr>
+                <input type="text" id="loginEmailInput" placeholder="Email">
+                <input type="submit" value="Login">
+                <hr>
+                <div>New to Zomato?<span id="newAccount" style="color: pink; cursor: pointer;" onclick="signup()">Create Account</span></div>
+            </div>
+        </div>
+        <div id="signupModalBox" class="modal">
+            <div class="modalContent">
+                <div style="display: flex; justify-content: space-between;">
+                    <h2>Signup</h2>
+                    <span class="close" onclick="modalClose()">&times;</span>
+                </div>
+                <input type="text" id="fullnameInput" placeholder="Full Name">
+                <input type="text" id="signupEmailInput" placeholder="Email">
+                <input type="tel" id="signupPhoneInput" placeholder="Phone">
+                <input type="submit" value="Create Account">
+                <hr>
+                <button id="continueWithGoogle">Continue with Google</button>
+                <hr>
+                <div>Already have an account?<span id="haveAccount" style="color: pink; cursor: pointer;" onclick="login()">Login</span></div>
+            </div>
+        </div>
+        <div id="root" style="z-index: 0;">
             <div>
                 <header>
                     <nav class="headerNav">
@@ -49,8 +79,8 @@
                             </li>
                             <li>
                                 <div style="display: flex; align-items: left; justify-content: space-evenly;">
-                                    <a href="#">Login</a>
-                                    <a href="#" style="padding-left: 2rem;">Signup</a>
+                                    <a href="#" onclick="login()">Login</a>
+                                    <a href="#" style="padding-left: 2rem;" onclick="signup()">Signup</a>
                                 </div>                                
                             </li>
                         </ul>
@@ -132,7 +162,7 @@
                         </section>
                         <!--add some buttons-->
                         <section class="restroConnect">
-                            <button type="button" class="reviewButton">
+                            <button type="button" class="reviewButton" onclick="login()">
                                 Add Review
                             </button>
                             <a href="https://www.google.com/maps/dir/?api=1&destination=28.4963316452,77.4021812528" target="_blank">
@@ -140,7 +170,7 @@
                                     Direction
                                 </button>
                             </a>
-                            <button type="button" class="connectButton">
+                            <button type="button" class="connectButton" onclick="login()">
                                 Bookmark
                             </button>
                             <button type="button" class="connectButton">
@@ -228,6 +258,7 @@
                 </div>
             </footer>
         </div>
+        <script src="header.js"></script>
     </body>
 
 </html>
