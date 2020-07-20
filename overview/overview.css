@@ -1,3 +1,7 @@
+#overview_section{
+    justify-content: left;
+}
+
 .zomato_gold_offer{
     width: max-content;
     font-size: 1.2rem;
@@ -62,13 +66,14 @@
 .check{
     display: flex;
     -webkit-box-pack: justify;
-    justify-content: space-between;
-    margin-left: 8rem;
-    margin-right: 8rem;
+    justify-content: space-evenly;
+    /* margin-left: 8rem;
+    margin-right: 8rem; */
     
 }
 .overview_left {
     width: 85rem;
+    justify-content: space-between;
 }
 .o_r{
     display: flex;

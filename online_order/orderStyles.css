@@ -5,29 +5,37 @@
 }
 
 .leftbar{
-    position: fixed;
+    position: sticky;
     /* z-index: 1; */
     overflow-x: hidden;
+    overflow-y: scroll;
     display: block;
-    width: 240px;
+    /* width: 240px; */
     border-right: 3px solid;
     border-image:linear-gradient(transparent, rgb(211,211,211), transparent) 2;
+    /* overflow-y: scroll; */
+}
+.leftbar::-webkit-scrollbar, .rlist::-webkit-scrollbar, #order_root::-webkit-scrollbar{
+    display: none;
 }
 
+#order_root{
+    display: flex;
+    flex-direction: row;
+    justify-content: left; 
+    overflow-y: scroll;  
+    height: 30rem;
+}
 .rlist{
-    margin-left: 240px;
-}
-a{
-    text-decoration: none;
-    color: #363636;
-    opacity: 73%;
+    overflow-y: scroll;
 }
 
-li{
+
+.slist li{
     padding: 15px 15px 15px 0;
 }
 
-li:hover{
+.slist li:hover{
     /* background-color: aqua; */
     background-image: linear-gradient(transparent, rgb(211,211,211), transparent) 2;
     border-right: 3px solid brown;

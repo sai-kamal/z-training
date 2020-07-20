@@ -1,18 +1,20 @@
-body {
+/* body {
     font-family: Okra,Helvetica,sans-serif;
     max-width: 80%;
     margin: auto;
-}
+} */
 
 #reviews_root {
     display: flex;
     justify-content: space-between;
-    box-sizing: border-box;
+    box-sizing: border-box;   
 }
 
 #reviews_root * {
     box-sizing: border-box;
+    
 }
+
 
 #reviews {
     width: 100%;
@@ -389,6 +391,7 @@ body {
     border-style: solid;
     border-color: rgb(17, 145, 153);
     border-image: initial;
+    cursor: pointer;
 }
 
 .prev_arrow, .next_arrow {

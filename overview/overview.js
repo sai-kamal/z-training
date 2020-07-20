@@ -1,4 +1,4 @@
-'use strict'
+// 'use strict'
 let overviewMenuIndex = 1;
 function overviewRightCopy(){
     alert("Address copied to the clipboard");
