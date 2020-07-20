@@ -1,0 +1,243 @@
+
+.headerForMain{
+    font-family: Okra,Helvetica,sans-serif;
+    display: block;
+    overflow: auto;
+    font-size: 62.5%;
+    font-weight: 300;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}.headerForMain
+header{
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    position: static;
+    height: 7.2rem;
+    justify-content: space-between;
+    align-items: center;
+    border-style: outset; 
+    border-width: 1px;
+    border-right: 0px;
+    /* border-bottom: 1px; */
+}.headerForMain
+.headerNav {
+    width:100%;
+    max-width: 110rem;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 4;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}.headerForMain
+.headerList{
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    height: 72px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}.headerForMain
+.main{
+    position: relative;
+    max-width: 110rem;
+    max-height: initial;
+    margin: 1rem 3rem 0px;
+}.headerForMain
+.searchBar{
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(232,232,232);
+    border-radius: 0.8rem;
+    box-shadow: rgba(28, 28, 28, 0.08) 0px 2px 8px;
+}.headerForMain
+.gallery{
+    display: flex;
+    width: 100%;
+    height: 37rem;
+}.headerForMain
+.galView1{
+    min-width: 62.4%;
+    max-width: 100%;
+    width: 62.4%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}.headerForMain
+
+.galView2, .galView3{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.6rem;
+
+}.headerForMain
+
+.galView2a, .galView2b, .galView3a{
+    min-width: 62.4%;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 0.3rem 0px 0.3rem
+}.headerForMain
+
+.galView3a1{
+    font-size: inherit;
+    line-height: 1.5;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 8rem;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+}.headerForMain
+.galView3b{
+    background-image: url(https://b.zmtcdn.com/data/zomaland/a6750d1….jpeg);
+    background-color: gray;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    margin: 0.3rem 0px 0.3rem;
+}.headerForMain
+
+.galView3b1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}.headerForMain
+
+.galViewBase{
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}.headerForMain
+
+.restroConnect{
+    display: flex;
+    align-items: left;
+    /* justify-content: space-between; */
+    justify-items: flex-start;
+    margin: 1rem 0px 1rem;
+}.headerForMain
+
+.connectButton{
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    background-color: white;
+    padding: 0.5rem;
+    border-width: 0.5px;
+    cursor: pointer;
+}.headerForMain
+.reviewButton{
+    border-radius: 0.5rem;
+    margin: 0.5rem 0px 0.5rem 0.5rem;
+    background-color: lightpink;
+    color: white;
+    padding: 0.5rem;
+    border-width: 0.5px;
+    border-color: lightpink;
+    cursor: pointer;
+}.headerForMain
+.reviewButton:hover{
+    background-color: rgb(231, 140, 155);
+}.headerForMain
+.connectButton:hover{
+    background-color: rgb(226, 222, 222);
+}.headerForMain
+
+.actionNavigator{
+    display: flex;
+    align-items: left;
+    justify-items: flex-start;
+    margin: 1rem 0px 1rem;
+    border-style: outset; 
+    border-width: 1px;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+}.headerForMain
+.actionTab{
+    /* margin: 1rem; */
+    padding: 1rem;
+    color: gray;
+    text-align: center;
+    transition: 0.3s;
+}.headerForMain
+
+.actionTab a{
+    color: gray;
+}.headerForMain
+
+.actionTab:hover{
+    /* color: lightpink; */
+    background-color: rgb(243, 211, 216);
+}.headerForMain
+
+div.relatedLinks a{
+    color: gray;
+    font-size: medium;
+    transition: 0.2s;
+}.headerForMain
+
+div.relatedLinks a:hover{
+    color: rgb(65, 63, 63);
+}.headerForMain
+
+img{
+    /* max-width: 100%;
+    /* max-height: 100%; */
+    object-fit: cover; 
+    height: 100%;
+    width: 100%;
+}.headerForMain
+a:link{
+    text-decoration: none;
+}.headerForMain
+a:visited{
+    text-decoration: none;
+}.headerForMain
+
+*{
+    box-sizing: border-box;
+}.headerForMain
+section{
+    display: block;
+}.headerForMain
+div{
+    display: block;
+    justify-content: center;
+}.headerForMain
+div, p, span {
+    font-size: 1.3rem;
+}

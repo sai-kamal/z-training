@@ -1,0 +1,114 @@
+.orderonlineForMain  .slist{
+    list-style-type: none;
+    font-size: large;
+    float: left;
+}.orderonlineForMain 
+
+.leftbar{
+    position: sticky;
+    /* z-index: 1; */
+    /* overflow-x: hidden; */
+    /* display: block; */
+    width: 240px;
+    border-right: 3px solid;
+    border-image:linear-gradient(transparent, rgb(211,211,211), transparent) 2;
+}.orderonlineForMain 
+
+.rlist{
+    margin-left: 240px;
+}.orderonlineForMain 
+a{
+    text-decoration: none;
+    color: #363636;
+    opacity: 73%;
+}.orderonlineForMain 
+
+li{
+    padding: 15px 15px 15px 0;
+}.orderonlineForMain 
+
+li:hover{
+    /* background-color: aqua; */
+    background-image: linear-gradient(transparent, rgb(211,211,211), transparent) 2;
+    border-right: 3px solid brown;
+}.orderonlineForMain 
+
+li a:visited{
+    width: max-content;
+    border-right: 3px solid red;
+    background-color: bisque;
+}.orderonlineForMain 
+
+.items{
+    list-style-type: none;
+    /* float: left; */
+}.orderonlineForMain 
+
+.obox{
+    margin-left: 30px;
+    border-bottom: 3px solid grey;
+}.orderonlineForMain 
+
+.ig{
+    margin: 5px 10px 0 5px;
+    width: 125px;
+    height: 125px;
+    border-radius: 9px;
+}.orderonlineForMain 
+.box{
+    height: fit-content;
+    margin-bottom: 10px;
+}.orderonlineForMain 
+.info{
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    width: 50%;
+}.orderonlineForMain 
+.votes{
+    color : silver;
+}.orderonlineForMain 
+.press{
+    color : grey;
+    font-size: 17px;
+}.orderonlineForMain 
+.price{
+    color : black;
+    font-size: 18px;
+    opacity: 70%;
+}.orderonlineForMain 
+h2{
+    margin: -10px 0 0 0;
+    text-decoration: none;
+    text-emphasis: none;
+    
+}.orderonlineForMain 
+.adder{
+    float: right;
+    margin-right: 18px;
+}.orderonlineForMain 
+.add_btn{
+    width: 85px;
+    height: 32px;
+    border: 0.5px solid grey;
+    background-color: white;
+    border-radius: 9px;
+}.orderonlineForMain 
+
+.srbox{
+    width: min-content;
+    height: 35px;
+    font-size: medium;
+    color: grey;
+}.orderonlineForMain 
+
+.rsm{
+    color: red;
+    font-size: small;
+}.orderonlineForMain 
+
+.rplus{
+    display: inline;
+    color: red;
+    font-size: large;
+}
