@@ -14,7 +14,7 @@ header{
     max-width: 100%;
     display: block;
     position: static;
-    height: 7.2rem;
+    height: 4.2rem;
     justify-content: space-between;
     align-items: center;
     border-style: outset; 
@@ -70,7 +70,8 @@ header{
 .gallery{
     display: flex;
     width: 100%;
-    height: 37rem;
+    height: 25rem;
+    overflow: hidden;
 }.headerForMain
 .galView1{
     min-width: 62.4%;
@@ -95,7 +96,7 @@ header{
     min-width: 62.4%;
     max-width: 100%;
     width: 100%;
-    height: 100%;
+    height: 50%;
     position: relative;
     cursor: pointer;
     overflow: hidden;
@@ -119,10 +120,11 @@ header{
     background-size: cover;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 50%;
     cursor: pointer;
     background-repeat: no-repeat;
     margin: 0.3rem 0px 0.3rem;
+    overflow: hidden;
 }.headerForMain
 
 .galView3b1{

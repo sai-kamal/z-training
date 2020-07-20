@@ -6,15 +6,20 @@ function showOverviewMain(){
     notCur[0].style.display = "none";
     notCur = document.getElementsByClassName("orderonlineForMain");
     notCur[0].style.display = "none";
-
-
-    // let cur = document.querySelector(".overviewForMain");
-    // cur.classList.add('hideALl');
-    // let overviewPhoto = document.querySelector(".overview_photo");
-    // overviewPhoto.classList.remove('hide');
-    // overviewShowSlide(overviewMenuIndex);
-
+    notCur = document.getElementsByClassName("photoForMain");
+    notCur[0].style.display = "none";
 }
+
+window.onscroll = function() {hiddingMiddle()};
+
+function hiddingMiddle() {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    document.getElementById("middleHeaderHide").style.display = "none";
+    
+  } else {
+    document.getElementById("middleHeaderHide").style.display = "block";
+  }
+ }
 
 function showReviewsMain(){
     let cur = document.getElementsByClassName("reviewsForMain");
@@ -22,6 +27,8 @@ function showReviewsMain(){
     let notCur = document.getElementsByClassName("overviewForMain");
     notCur[0].style.display = "none";
     notCur = document.getElementsByClassName("orderonlineForMain");
+    notCur[0].style.display = "none";
+    notCur = document.getElementsByClassName("photoForMain");
     notCur[0].style.display = "none";
 }
 function showOrderonlineMain(){
@@ -31,8 +38,21 @@ function showOrderonlineMain(){
     notCur[0].style.display = "none";
     notCur = document.getElementsByClassName("overviewForMain");
     notCur[0].style.display = "none";
+    notCur = document.getElementsByClassName("photoForMain");
+    notCur[0].style.display = "none";
 }
 
+function showPhotoMain(){
+    let cur = document.getElementsByClassName("photoForMain");
+    cur[0].style.display = "block";
+    let notCur = document.getElementsByClassName("reviewsForMain");
+    notCur[0].style.display = "none";
+    notCur = document.getElementsByClassName("overviewForMain");
+    notCur[0].style.display = "none";
+    notCur = document.getElementsByClassName("orderonlineForMain");
+    notCur[0].style.display = "none";
+    
+}
 showOverviewMain();
 let overviewMenuIndex = 1;
 function overviewRightCopy(){

@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Complete Zomato Page</title>
+    <link rel="stylesheet" href="photos.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="overview.css">
+    <link rel="stylesheet" href="orderStyles.css">
+    <link rel="stylesheet" href="reviews.css">
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
 </head>
 
-<body>
-
-
+<body style = "margin-left:8%; margin-right:8%;">
+    
     <div class="headerForMain">
         <div id="root">
             <div>
@@ -20,7 +24,7 @@
                         <ul class="headerList">
                             <li>
                                 <a href = "https://zomato.com">
-                                    <img src="https://b.zmtcdn.com/data/bdddded729eec1881d992117920afa5f1553759845.png" alt="Zomato" style="max-width:14rem;">
+                                    <img src="https://b.zmtcdn.com/data/bdddded729eec1881d992117920afa5f1553759845.png" alt="Zomato" style="max-width:8rem;">
                                 </a>
                             </li>
                             <li>
@@ -56,7 +60,7 @@
             <main>
                 <!--main content-->
                 <div id="main" class="main">
-                    <section style="padding-top: 10px;padding-bottom: 10px;">
+                    <section style="padding-top: 0px;padding-bottom: 10px;">
                     <div>
                         <!--directory-->
                         <a href="https://www.zomato.com/" title="Home">Home</a><span>/</span>
@@ -76,7 +80,7 @@
                             <section class="galView2">
                                 <div width="100%" class="galView2a">
                                     <div width="100%" height="100%" class="galViewBase">
-                                        <img alt="image" src="https://b.zmtcdn.com/data/pictures/chains/5/312995/85d1e6a7f48b5dc09e4fcafd2152120e.jpg">
+                                        <img alt="image" src="https://b.zmtcdn.com/data/pictures/chains/5/312995/85d1e6a7f48b5dc09e4fcafd2152120e.jpg" >
                                     </div>
                                 </div>
                                 <div width="100%" class="galView2b">
@@ -86,84 +90,100 @@
                                 </div>
                             </section>
                             
-                        </div>
-                    </section>
-                    <section>
-                        <section title="about restaurant">
-                            <h1 style="font-size: xx-large;">Biryani By Kilo</h1>
-                            <section>
-                                <div>
-                                    <a href="https://www.zomato.com/ncr/casual-dining" title="View all Casual Dining in Delhi NCR">Casual Dining</a>
-                                    <span> - </span>
-                                    <a href="https://www.zomato.com/ncr/restaurants/biryani/">Biryani</a>
-                                    <span>, </span>
-                                    <a href="https://www.zomato.com/ncr/restaurants/mughlai/">Mughlai</a>
-                                    <span>, </span>
-                                    <a href="https://www.zomato.com/ncr/restaurants/kebab/">Kebab</a>
-                                    <span>, </span>
-                                    <a href="https://www.zomato.com/ncr/restaurants/hyderabadi/">Hyderabadi</a>
+                            <section class="galView3">
+                                <div width="100%" class="galView3a">
+                                    <div class="galViewBase">
+                                        <img alt="image" src="https://b.zmtcdn.com/data/pictures/8/18821448/ba2cfa97650efd45b2307afb33813ee2.jpg">
+                                    </div>
+                                    <p class="galView3a1">View Gallery</p>
                                 </div>
-                                <a href="https://www.zomato.com/ncr/sector-135-restaurants">Sector 135, Noida</a>
+                                <section class="galView3b"><!--set some BG img-->
+                                    <section class="galView3b1">
+                                        <div>
+                                            <i size="20" color="#FFFFFF">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="20" height="20" viewBox="0 0 20 20" aria-labelledby="icon-svg-title-CameraAdd icon-svg-desc-CameraAdd" role="img" class="rbbb40-0 kIxlGM"><linearGradient id="ckcngoweo054d3b6sdzxnq9dr" x1="0" x2="100%" y1="0" y2="0"><stop offset="0" stop-color="#FFFFFF"></stop><stop offset="100%" stop-color="#FFFFFF"></stop></linearGradient><title id="icon-svg-title-CameraAdd">Camera Add icon</title><desc id="icon-svg-desc-CameraAdd">It is an icon with title Camera Add</desc><title>camera-add</title><path d="M8.82 7.32c-0.020 0-0.040 0-0.060 0-2.32 0-4.2 1.86-4.24 4.16v0c0.040 2.32 1.92 4.18 4.24 4.18 0.020 0 0.040 0 0.060 0v0c0 0 0.020 0 0.040 0 2.32 0 4.2-1.86 4.24-4.18v0c-0.040-2.3-1.92-4.16-4.24-4.16-0.020 0-0.040 0-0.060 0h0.020zM8.82 14.22c-0.020 0-0.020 0-0.020 0-1.52 0-2.78-1.2-2.84-2.74v0c0.040-1.52 1.26-2.74 2.8-2.74 0.020 0 0.040 0 0.060 0v0c0 0 0.020 0 0.040 0 1.54 0 2.78 1.22 2.8 2.74v0c-0.060 1.54-1.3 2.74-2.84 2.74 0 0 0 0 0 0v0zM16.66 10.42c-0.12 0-0.24 0.1-0.24 0.24v0 4.34c0 1.42-1.16 2.56-2.58 2.56 0 0 0 0 0 0h-9.82c0 0 0 0 0 0-1.42 0-2.58-1.14-2.6-2.56v-6.22c0.020-1.34 1.1-2.42 2.44-2.42 0.020 0 0.020 0 0.040 0v0h0.38c0.3 0 0.54-0.16 0.66-0.4v-0.020l0.94-1.98c0.2-0.4 0.58-0.68 1.060-0.68v0h2.32c0 0 0 0 0 0 0.48 0 0.88 0.28 1.080 0.68v0l0.94 1.98c0.12 0.26 0.36 0.42 0.66 0.42h0.44s0-0.84 0-1.080c0-0.24-0.060-0.46-0.16-0.66v0.020l-0.58-1.28c-0.42-0.9-1.34-1.52-2.38-1.52 0 0 0 0 0 0h-2.32c0 0 0 0 0 0-1.060 0-1.96 0.62-2.38 1.52v0l-0.74 1.58c-2.1 0.020-3.8 1.72-3.82 3.8v0 6.22c0 0 0 0.020 0 0.020 0 2.22 1.8 4 4.020 4 0 0 0 0 0 0h9.82c0 0 0 0 0 0 2.2 0 4-1.78 4-3.98v-4.34c0-0.14-0.1-0.24-0.22-0.24v0zM19.28 5.42h-1.9v-1.9c0-0.4-0.32-0.72-0.72-0.72s-0.7 0.32-0.7 0.72v0 1.9h-1.92c-0.38 0-0.7 0.32-0.7 0.7s0.32 0.72 0.7 0.72v0h1.92v1.9c0 0.4 0.32 0.72 0.7 0.72s0.72-0.32 0.72-0.72v0-1.9h1.9c0.4 0 0.72-0.32 0.72-0.72s-0.32-0.7-0.72-0.7v0z" fill="url(#ckcngoweo054d3b6sdzxnq9dr)"></path></svg>
+                                            </i>
+                                        </div>
+                                        Add Photos
+                                    </section>
+                                </section>
                             </section>
-                            <section >
-                                <span>Open now</span><span>10am – 11pm (Today)</span>
-                            </section>
-                        </section>
-                        <!--add some buttons-->
-                        <section class="restroConnect">
-                            <button type="button" class="reviewButton">
-                                Add Review
-                            </button>
-                            <a href="https://www.google.com/maps/dir/?api=1&destination=28.4963316452,77.4021812528" target="_blank">
-                                <button type="button" class="connectButton">
-                                    Direction
-                                </button>
-                            </a>
-                            <button type="button" class="connectButton">
-                                Bookmark
-                            </button>
-                            <button type="button" class="connectButton">
-                                Share
-                            </button>
-                        </section>
-                    </section>
-                    <section class="actionNavigator">
-                        <div class="actionTab">
-                            <a  onclick="showOverviewMain()" title="Overview">Overview</a>
-                        </div>
-                        <div class="actionTab">
-                            <a onclick="showOrderonlineMain()" title="Order Online">Order Online</a>
-                        </div>
-                        <div class="actionTab">
-                            <a onclick="showReviewsMain()" title="Reviews">Reviews</a>
-                        </div>
-                        <div class="actionTab">
-                            <a href="#" title="Menu">Menu</a>
-                        </div>
-                        <div class="actionTab">
-                            <a href="#" title="Photos">Photos</a>
+                            
                         </div>
                     </section>
-                    <section id="mainEmbedHere">
-                        <!-- emebed html elements here, replace this div dynamically(default:overview)-->
-                        <div style="background-color: lightgray;">
-                        </div>
-                    
-                    </section>
-                    
+
                 </div>
             </main>
-    
+        </div>
+    </div>
+
+    <div class = "middleheaderForMain" style="margin-left: 3%;margin-right: 3%">
+        <div class="headerForMain">
+            <section>
+                <section title="about restaurant">
+                    <h1 class = "resName">Biryani By Kilo</h1>
+                    <section>
+                        <div>
+                            <a href="https://www.zomato.com/ncr/casual-dining" title="View all Casual Dining in Delhi NCR">Casual Dining</a>
+                            <span> - </span>
+                            <a href="https://www.zomato.com/ncr/restaurants/biryani/">Biryani</a>
+                            <span>, </span>
+                            <a href="https://www.zomato.com/ncr/restaurants/mughlai/">Mughlai</a>
+                            <span>, </span>
+                            <a href="https://www.zomato.com/ncr/restaurants/kebab/">Kebab</a>
+                            <span>, </span>
+                            <a href="https://www.zomato.com/ncr/restaurants/hyderabadi/">Hyderabadi</a>
+                        </div>
+                        <a href="https://www.zomato.com/ncr/sector-135-restaurants">Sector 135, Noida</a>
+                    </section>
+                    <section >
+                        <span>Open now</span><span>10am – 11pm (Today)</span>
+                    </section>
+                </section>
+                <!--add some buttons-->
+                <section id = "middleHeaderHide" class="restroConnect">
+                    <button type="button" class="reviewButton">
+                        Add Review
+                    </button>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=28.4963316452,77.4021812528" target="_blank">
+                        <button type="button" class="connectButton">
+                            Direction
+                        </button>
+                    </a>
+                    <button type="button" class="connectButton">
+                        Bookmark
+                    </button>
+                    <button type="button" class="connectButton">
+                        Share
+                    </button>
+                </section>
+            </section>
+            <section class="actionNavigator">
+                <div class="actionTab">
+                    <a  onclick="showOverviewMain()" title="Overview">Overview</a>
+                </div>
+                <div class="actionTab">
+                    <a onclick="showOrderonlineMain()" title="Order Online">Order Online</a>
+                </div>
+                <div class="actionTab">
+                    <a onclick="showReviewsMain()" title="Reviews">Reviews</a>
+                </div>
+                <div class="actionTab">
+                    <a onclick="showPhotoMain()" title="Photos">Photos</a>
+                </div>
+            </section>
+            <section id="mainEmbedHere">
+                <!-- emebed html elements here, replace this div dynamically(default:overview)-->
+                <div style="background-color: lightgray;">
+                </div>
+            
+            </section>
             
         </div>
-    
-    
     </div>
-    
 
     
-    <div id = "first" class="overviewForMain">
-            
+    <div id = "first" class="overviewForMain">      
         <div class="check">
             <section class = "overview_left">
                 <div class="zomato_gold">
@@ -272,18 +292,19 @@
         
             
             <article class="overview_right">
-                <h1>Call</h1>
-                <h2>+0000000000</h2>
-                <h1>Direction</h1>
+                <h1 style="margin:0;">Call</h1>
+                <h2 style="margin:1%;">+0000000000</h2>
+                <h1 style="margin:1%;">Direction</h1>
                 <img src="https://b.zmtcdn.com/data/menus/995/312995/762c598d5b4906728c37c32acbb644bd.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A">
-                <p>address of the RESTAURANT</p>
+                <p style="margin: 1%;font-size: large;">address of the RESTAURANT</p>
                 <section class="o_r">
                     <button onclick="overviewRightCopy()"><h3>Copy</h3></button>
-                    <h3>map</h3>
+                    <button onclick="alert('under Construction')"><h3>Map</h3></button>
+                    
                 </section>
             </article>
         </div>
-        
+     
         <div class="overview_photo hide">
             <div class="overviewSlideShow">
         
@@ -315,25 +336,21 @@
     
 
 
-    <div class="orderonlineForMain">
-        
-        <div class="for_position">
-            <nav class="leftbar">
-                <ul class = 'slist'>
-                    <li><a href="#c1">Bestsellers (4)</a></li>
-                    <li><a href="#c2">Restaurant's Recommendations (10)</a></li>
-                    <li><a href="#c3">Lucknowi Biryani (3)</a></li>
-                    <li><a href="#c4">Hyderabadi Biryani (10)</a></li>
-                    <li><a href="#c5">Kebabs (6)</a></li>
-                    <li><a href="#c6">Celebration Combos (upto 20% off) (10)</a></li>
-                    <li><a href="#c7">Desserts (3)</a></li>
-                    <li><a href="#c8">Extras (3)</a></li>
-                </ul>
-            </nav>
-        
+    <div class="orderonlineForMain" style="margin-left: 3%;margin-right: 3%;" >
+        <div class="leftbar">
+            <ul class = 'slist'>
+                <li><a href="#c1">Bestsellers (4)</a></li>
+                <li><a href="#c2">Restaurant's Recommendations (10)</a></li>
+                <li><a href="#c3">Lucknowi Biryani (3)</a></li>
+                <li><a href="#c4">Hyderabadi Biryani (10)</a></li>
+                <li><a href="#c5">Kebabs (6)</a></li>
+                <li><a href="#c6">Celebration Combos (upto 20% off) (10)</a></li>
+                <li><a href="#c7">Desserts (3)</a></li>
+                <li><a href="#c8">Extras (3)</a></li>
+            </ul>
         </div>
     
-        <div class = rlist>
+        <div class = "rlist">
             <div class = 'items'>
                 <div class = "obox">
                     <div class = "box">
@@ -551,7 +568,7 @@
                 </div>            
             </div>
         </div>
-
+       
     </div>
 
 
@@ -1560,6 +1577,287 @@
         
     </div>
 
+    <div class="photoForMain" style="margin-left: 3%;margin-right: 3% ">
+        <section class="sc-dTLGrV gmismd">
+            <div class="sc-jGFFOr foYMbJ">
+               <h3>Biryani By Kilo Photos</h4>
+               <div class="sc-kMBllD fyERxd">
+                  <div class="sc-hCbubC ctpOJr"><button class="sc-1kx5g6g-1 dXXDbl sc-hgzKov biDcRr" role="button" tabindex="0" aria-disabled="false"><span tabindex="-1" class="sc-1kx5g6g-2 krzOCY"><span class="sc-1kx5g6g-3 dkwpEa">All (114)</span></span></button><button class="sc-1kx5g6g-1 dXXDbl sc-hgzKov biDcRr" role="button" tabindex="0" aria-disabled="false"><span tabindex="-1" class="sc-1kx5g6g-2 jgGYJH"><span class="sc-1kx5g6g-3 dkwpEa">Safety Practices (14)</span></span></button><button class="sc-1kx5g6g-1 dXXDbl sc-hgzKov biDcRr" role="button" tabindex="0" aria-disabled="false"><span tabindex="-1" class="sc-1kx5g6g-2 jgGYJH"><span class="sc-1kx5g6g-3 dkwpEa">Food (82)</span></span></button><button class="sc-1kx5g6g-1 dXXDbl sc-hgzKov biDcRr" role="button" tabindex="0" aria-disabled="false"><span tabindex="-1" class="sc-1kx5g6g-2 jgGYJH"><span class="sc-1kx5g6g-3 dkwpEa">Ambience (9)</span></span></button></div>
+               </div>
+               <div class="sc-bLJvFH jbzhIw">
+                  <div class="bke1zw-0 cMipmx">
+                     <div class="bke1zw-1 fJrjep">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/chains/5/312995/734d388d6aaa9937ff2cfca22aea42df.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 fKUTeK">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/chains/5/312995/85d1e6a7f48b5dc09e4fcafd2152120e.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 dCXEom">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/8/18821448/98c9161ed6d756b9fb2a16515aa74449.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 dmqZyt">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/8/18821448/ba2cfa97650efd45b2307afb33813ee2.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 hJASMb">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/chains/5/312995/2b7841a8c6d16b673ac23e656a3d18f1.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 fJrjep">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/8/18821448/89e2e6f99fe72551f96244f11f2bc815.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 fKUTeK">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/chains/5/312995/469d424f1ae11a6686a5407f0ce15a55.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 dCXEom">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/8/18821448/609ee6f4a29e404dfb33d707174e7729.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 dmqZyt">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/chains/5/312995/b26d398e992ad8d2b64e26355078cd80.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 hJASMb">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/8/18821448/9c744e4fff796795c414ab7979fc0f3a.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 fJrjep">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/chains/5/312995/038f3c86402d399618055aab89f854ee.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 fKUTeK">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/8/18821448/64b0f47ef857079b0ec384c2f0b46af9.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 dCXEom">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/8/18821448/fad7480653043cdcecdf9c0b15e39dc8.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 dmqZyt">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/chains/5/312995/f72610f79f6479f5dd970b860661a54b.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 hJASMb">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/chains/5/312995/fc09e4e8a72ad0ead40079d43065d8af.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 fJrjep">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/8/18821448/9f36893b7467deb4cdee5be9c26b15cd.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 fKUTeK">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/chains/5/312995/2e25420c6c279bc10539b53ef0e81742.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 dCXEom">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/chains/5/312995/a3e497dd04a0c113f42b8d2f875742bc.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 dmqZyt">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/8/18821448/de2a949d897d3415f6c640a21ebe1c03.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 hJASMb">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/8/18821448/3f59cf17dd5ad9f75cfd2e69cb053e1b.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 fJrjep">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/chains/5/312995/d6a41a741d45d7d7700cb266c6932138.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 fKUTeK">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/8/18821448/1c39b5494685d8a10f595c121c61c320.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 dCXEom">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/8/18821448/4ed4bc4aa588abb2e8d8564a26b1234a.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 dmqZyt">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/chains/5/312995/1f4648b44ed03e5548255e0f8749fdba.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 hJASMb">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/8/18821448/3001ef334240ca62a00fddff3171d22d.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 fJrjep">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/chains/5/312995/405a62ef14ea53e74f0bd6a53c323cb3.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 fKUTeK">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/8/18821448/7e8ee8038d0b809970cc145520aed748.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 dCXEom">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/chains/5/312995/6d4ed1bd0730e7ce49a2b03cfbfee778.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 dmqZyt">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/chains/5/312995/d9cbb86434e42ecff69e8309a25674a3.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 hJASMb">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/8/18821448/393597dd0e246a20c911d241d3b72d02.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 fJrjep">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/chains/5/312995/57f1bedb26e0fa3ff6c1b761c51f4347.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                     <div class="bke1zw-1 fKUTeK">
+                        <div height="20rem" width="100%" class="s1isp7-0 hJwSen sc-hjRWVT sc-hZeNU kzbTkW">
+                           <div src="" class="s1isp7-2 dBjfsr"></div>
+                           <img alt="Gallery Image" src="https://b.zmtcdn.com/data/pictures/chains/5/312995/42e3b4faac2f7d06c9acbe298679ee85.jpg?fit=around%7C200%3A200&amp;crop=200%3A200%3B%2A%2C%2A" loading="lazy" class="s1isp7-4 bBALuk">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="sc-eQGPmX RIdAf">
+                  <div class="sc-dAOnuy dOBqPv">Showing 1-32 of 114 images</div>
+                  <div class="sc-cSYcjD fVHGdp">
+                     <div class="sc-gjAXCV jXyzfh">
+                        <a href="https://www.zomato.com/ncr/biryani-by-kilo-sector-135-noida/photos?page=1&amp;category=all" class="sc-ckYZGd bUVLGI">
+                           <div class="sc-dOkuiw dHetEh">1</div>
+                        </a>
+                        <a href="https://www.zomato.com/ncr/biryani-by-kilo-sector-135-noida/photos?page=1&amp;category=all" class="sc-ckYZGd bUVLGI">
+                           <div class="sc-dOkuiw eoeexH">2</div>
+                        </a>
+                        <a href="https://www.zomato.com/ncr/biryani-by-kilo-sector-135-noida/photos?page=1&amp;category=all" class="sc-ckYZGd bUVLGI">
+                           <div class="sc-dOkuiw eoeexH">3</div>
+                        </a>
+                        <a href="https://www.zomato.com/ncr/biryani-by-kilo-sector-135-noida/photos?page=1&amp;category=all" class="sc-ckYZGd bUVLGI">
+                           <div class="sc-dOkuiw eoeexH">4</div>
+                        </a>
+                        <a href="https://www.zomato.com/ncr/biryani-by-kilo-sector-135-noida/photos?page=2&amp;category=all" class="sc-ckYZGd sc-eweMDZ sc-dXLFzO eTAqwx">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+    </div>
+
+    <div class="footerForMain headerForMain" style="margin-right: 3%;margin-left: 3%;">
+        <div style="border-top: 1px solid lightgray; margin-top: 2rem;">
+            <div>
+                <h4>Related to Biryani By Kilo, Sector 135</h4>
+                <div class="relatedLinks">
+                    <a href="https://www.zomato.com/ncr">Restaurants in Noida, Noida Restaurants,</a>
+                    <a href="https://www.zomato.com/ncr/sector-135-restaurants" >Sector 135 restaurants,</a>
+                    <a href="https://www.zomato.com/ncr/sector-135-restaurants?sort=best">Best Sector 135 restaurants,</a>
+                    <a href="https://www.zomato.com/ncr/noida-restaurants">Noida restaurants,</a>
+                    <a href="https://www.zomato.com/ncr/casual-dining">Casual Dining in Delhi NCR,</a>
+                    <a href="https://www.zomato.com/casual-dining-near-me">Casual Dining near me,</a>
+                    <a href="https://www.zomato.com/ncr/noida-restaurants/casual-dining">Casual Dining in Noida,</a>
+                    <a href="https://www.zomato.com/ncr/sector-135-restaurants/casual-dining">Casual Dining in Sector 135,</a>
+                    <a href="https://www.zomato.com/ncr"> in Delhi NCR,</a>
+                    <a href="https://www.zomato.com/restaurants-near-me"> near me,</a>
+                    <a href="https://www.zomato.com/ncr/noida-restaurants"> in Noida,</a>
+                    <a href="https://www.zomato.com/ncr/sector-135-restaurants"> in Sector 135,</a>
+                    <a href="https://www.zomato.com/ncr"> in Delhi NCR,</a>
+                    <a href="https://www.zomato.com/restaurants-near-me"> near me,</a>
+                    <a href="https://www.zomato.com/ncr/noida-restaurants"> in Noida,</a>
+                    <a href="https://www.zomato.com/ncr/sector-135-restaurants"> in Sector 135,</a>
+                    <a href="https://www.zomato.com/ncr/biryani-by-kilo-sector-135-noida/menu">Biryani By Kilo Menu,</a>
+                    <a href="https://www.zomato.com/ncr/sector-135-restaurants?order-online=1">Order food online in Sector 135, Noida,</a>
+                    <a href="https://www.zomato.com/ncr/order-food-online">Order food online in Delhi NCR,</a>
+                    <a href="https://www.zomato.com/ncr/noida-order-online">Order food online in Noida</a>
+                    <a href="https://www.zomato.com/ncr/newyear" >New Year Parties in Delhi NCR,</a>
+                    <a href="https://www.zomato.com/ncr/christmas">Christmas' Special in Delhi NCR,</a>
+                </div>
+            </div>
+            <div>
+                <h4>Restaurants around Sector 135</h4>
+                <div class="relatedLinks">
+                    <a href="https://www.zomato.com/ncr/yakubpur-restaurants">Yakubpur restaurants, </a>
+                    <a href="https://www.zomato.com/ncr/sector-83-noida-restaurants">Sector 83 restaurants,</a>
+                    <a href="https://www.zomato.com/ncr/sector-132-noida-restaurants">Sector 132 restaurants,</a>
+                    <a href="https://www.zomato.com/ncr/sector-93-noida-restaurants">Sector 93 restaurants,</a>
+                </div>
+            </div>
+            <div>
+                <h4>Frequent searches leading to this page</h4>
+                <div class="relatedLinks">
+                    <a href="https://www.zomato.com/ncr/biryani-by-kilo-sector-135-noida" >noida sec 135,</a>
+                    <a href="https://www.zomato.com/ncr/biryani-by-kilo-sector-135-noida" >zomato near me,</a>
+                    <a href="https://www.zomato.com/ncr/biryani-by-kilo-sector-135-noida" >biryani by kilo contact sector 137,</a>
+                    <a href="https://www.zomato.com/ncr/biryani-by-kilo-sector-135-noida" >khans kitchen biriyani 135,</a>
+                    <a href="https://www.zomato.com/ncr/biryani-by-kilo-sector-135-noida" >biryani by kilo menu</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="main.js"></script>
+
+    
 
 </body>

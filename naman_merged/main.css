@@ -1,4 +1,15 @@
-@import "header.css";
-@import "overview.css";
-@import "orderStyles.css";
-@import "reviews.css" 
+.headerForMain *{
+    font-size: 15px;
+}
+.middleheaderForMain{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+}
+.resName{
+    font-size: xx-large;
+    padding: 0%;
+    margin: 0%;
+}

@@ -6,9 +6,11 @@
 
 .leftbar{
     position: sticky;
-    /* z-index: 1; */
-    /* overflow-x: hidden; */
+    top: 25%;
+    z-index: 1; 
+    overflow-x: hidden;
     /* display: block; */
+    float: left;
     width: 240px;
     border-right: 3px solid;
     border-image:linear-gradient(transparent, rgb(211,211,211), transparent) 2;
