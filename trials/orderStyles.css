@@ -1,0 +1,141 @@
+.slist{
+    list-style-type: none;
+    font-size: large;
+    float: left;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.zatsContainer{
+    padding-top: 18px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+#list_scroll_strict{
+    position: fixed;
+    height: fit-content;
+    width: 100%;
+}
+
+.leftbar{
+    position: sticky;
+    top: 10rem;
+    margin-bottom: 20px;
+    height: fit-content;
+    width: 30rem;
+    border-right: 3px solid;
+    border-image:linear-gradient(transparent, rgb(211,211,211), transparent) 2;
+}
+
+.rlist{
+    width: 100%;
+    margin-left: 3px;
+}
+.link_text{
+    text-decoration: none;
+    color: #363636;
+    opacity: 73%;
+}
+
+li{
+    padding: 15px 15px 15px 0;
+}
+
+li:hover{
+    /* background-color: aqua; */
+    background-image: linear-gradient(transparent, rgb(211,211,211), transparent) 2;
+    border-right: 3px solid brown;
+    
+}
+
+li a:visited{
+    width: max-content;
+    border-right: 3px solid red;
+    background-color: bisque;
+}
+
+.items{
+    list-style-type: none;
+    /* float: left; */
+}
+
+.obox{
+    margin-left: 30px;
+    border-bottom: 3px solid grey;
+}
+
+.ig{
+    margin: 5px 10px 0 5px;
+    width: 125px;
+    height: 125px;
+    border-radius: 9px;
+}
+.box{
+    height: fit-content;
+    margin-bottom: 10px;
+}
+.info{
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    width: 50%;
+}
+.votes{
+    color : silver;
+}
+.press{
+    color : grey;
+    font-size: 17px;
+}
+.price{
+    color : black;
+    font-size: 18px;
+    opacity: 70%;
+}
+h2{
+    margin: -10px 0 0 0;
+    text-decoration: none;
+    text-emphasis: none;
+    
+}
+.adder{
+    float: right;
+    margin-right: 18px;
+}
+.add_btn{
+    width: 85px;
+    height: 32px;
+    border: 0.5px solid grey;
+    background-color: white;
+    border-radius: 9px;
+}
+
+.srbox{
+    width: min-content;
+    height: 35px;
+    font-size: medium;
+    color: grey;
+}
+
+.rsm{
+    color: red;
+    font-size: small;
+}
+
+.rplus{
+    display: inline;
+    color: red;
+    font-size: large;
+}
+
+
+@media screen and (max-width: 450px){
+    .leftbar{
+        width: 25%;
+    }
+    .slist{
+        font-size: smaller;
+    }
+}

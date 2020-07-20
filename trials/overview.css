@@ -1,0 +1,142 @@
+.zomato_gold_offer{
+    width: max-content;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    background: rgb(237, 90, 107);
+    border-radius: 0.6rem;
+    padding: 1px 3px;
+}
+
+.zomato_gold{
+    font-size: 1.2rem;
+    background: rgb(250, 250, 250);
+    border-radius: 0.6rem;
+    padding: 0.4rem 0.6rem;
+}
+.about_place_p_con1{
+    font-size: 0.6rem;
+    line-height: 1.5;
+    color: rgb(156, 156, 156);
+    margin: 0px;
+}
+.about_place_p_con2{
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: rgb(28, 28, 28);
+    margin: 0.2rem 0px 0px;
+}
+.about_place_con{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.06) 1px 0px 4px;
+    cursor: pointer;
+    margin-right: 1rem;
+    border-radius: 8px;
+    padding: 0.9rem 0.7rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(232, 232, 232);
+    border-image: initial;
+}
+.a_p_content{
+    display: flex;
+}
+
+.overview_right{
+    box-sizing: border-box;
+    box-shadow: rgba(28, 28, 28, 0.12) 0px 2px 8px;
+    margin-left: 3rem;
+    width: 35rem;
+    height: fit-content;
+    position: sticky;
+    top: 50px;
+    background: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(248, 248, 248);
+    border-image: initial;
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+.check{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.overview_left {
+    width: 85rem;
+}
+.o_r{
+    display: flex;
+}
+.cuisines_type{
+    box-shadow: rgba(54, 54, 54, 0.06) 0px 1px 2px;
+    display: inline-flex;
+    cursor: pointer;
+    color: rgb(17, 145, 153);
+    font-size: 1rem;
+    line-height: 1.2;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(207, 207, 207);
+    border-image: initial;
+    border-radius: 59px;
+    padding: 0.8rem;
+    margin: 0px 1rem 1rem 0px;
+    text-decoration: unset;
+}
+
+.more_info_item{
+    display: inline-flex;
+    margin-right:100px;
+}
+.image_biryani{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 0.6rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) 85%);
+}
+.overviewMenu{
+    width: 13rem   
+}
+.hide{
+    display:none;
+}
+.overview_photo{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(28, 28, 28);
+
+}
+.overviewMenuPhoto{
+    display: none;
+}
+.overviewPrev, .overviewNext{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .overviewNext {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .overviewSlideShow{
+    max-width: 300px;
+    position: relative;
+    margin: auto;
+  }
