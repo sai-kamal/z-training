@@ -11,13 +11,43 @@
         .gm-style img{max-width: none;}
         .gm-style {font: 400 11px Roboto, Arial, sans-serif; text-decoration: none;}
         </style> -->
-        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="./header/header.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body style="overflow:auto;">
         <!--everything comes inside this division-->
-        <div id="root">
+        <div id="loginModalBox" class="modal">
+            <div class="modalContent">
+                <div style="display: flex; justify-content: space-between;">
+                    <h2>Login</h2>
+                    <span class="close" onclick="modalClose()">&times;</span>
+                </div>
+                <button id="continueWithGoogle">Continue with Google</button>
+                <hr>
+                <input type="text" id="loginEmailInput" placeholder="Email">
+                <input type="submit" value="Login">
+                <hr>
+                <div>New to Zomato?<span id="newAccount" style="color: pink; cursor: pointer;" onclick="signup()">Create Account</span></div>
+            </div>
+        </div>
+        <div id="signupModalBox" class="modal">
+            <div class="modalContent">
+                <div style="display: flex; justify-content: space-between;">
+                    <h2>Signup</h2>
+                    <span class="close" onclick="modalClose()">&times;</span>
+                </div>
+                <input type="text" id="fullnameInput" placeholder="Full Name">
+                <input type="text" id="signupEmailInput" placeholder="Email">
+                <input type="tel" id="signupPhoneInput" placeholder="Phone">
+                <input type="submit" value="Create Account">
+                <hr>
+                <button id="continueWithGoogle">Continue with Google</button>
+                <hr>
+                <div>Already have an account?<span id="haveAccount" style="color: pink; cursor: pointer;" onclick="login()">Login</span></div>
+            </div>
+        </div>
+        <div id="root" style="z-index: 0;">
             <div>
                 <header>
                     <nav class="headerNav">
@@ -49,8 +79,8 @@
                             </li>
                             <li>
                                 <div style="display: flex; align-items: left; justify-content: space-evenly;">
-                                    <a href="#">Login</a>
-                                    <a href="#" style="padding-left: 2rem;">Signup</a>
+                                    <a href="#" onclick="login()">Login</a>
+                                    <a href="#" style="padding-left: 2rem;" onclick="signup()">Signup</a>
                                 </div>                                
                             </li>
                         </ul>
@@ -132,7 +162,7 @@
                         </section>
                         <!--add some buttons-->
                         <section class="restroConnect">
-                            <button type="button" class="reviewButton">
+                            <button type="button" class="reviewButton" onclick="login()">
                                 Add Review
                             </button>
                             <a href="https://www.google.com/maps/dir/?api=1&destination=28.4963316452,77.4021812528" target="_blank">
@@ -140,7 +170,7 @@
                                     Direction
                                 </button>
                             </a>
-                            <button type="button" class="connectButton">
+                            <button type="button" class="connectButton" onclick="login()">
                                 Bookmark
                             </button>
                             <button type="button" class="connectButton">
@@ -222,12 +252,193 @@
                 </div>
             </main>
 
-            <footer>
+            <!-- <footer>
                 <div style="background-color: lightgray;">
                     Add Footer here 
                 </div>
-            </footer>
+            </footer> -->
+            <footer class="elhb8j-20 bWAMuJ">
+                <div class="elhb8j-21 dsEzqn">
+                   <section class="elhb8j-2 fhQkNV">
+                      <img src="https://b.zmtcdn.com//data/bdddded729eec1881d992117920afa5f1553759845.png" alt="Zomato logo" height="28px" class="elhb8j-1 bZvWyv">
+                      <div class="elhb8j-11 bTmMWW"></div>
+                      <section class="elhb8j-9 icSVnn">
+                         <div class="sc-18n4g8v-0 gAhmYY sc-10ugfab-1 gJYvaX">
+                            <div tabindex="0" aria-labelledby="country-dropdown-label" class="sc-10ugfab-9 ceanFw">
+                               <label id="country-dropdown-label" class="sc-10ugfab-2 jzrEzn">Select Country</label><span class="sc-10ugfab-5 erXsJY"></span>
+                               <div tabindex="-1" aria-activedescendant="country-active" class="sc-10ugfab-6 TWZmX">
+                                  <div class="bke1zw-0 cMipmx sc-10ugfab-0 iYiNyG">
+                                     <div class="bke1zw-1 gfTNTj">
+                                        <div id="country-active" class="sc-10ugfab-4 fJhMSb"><span width="45" class="sc-13tn0rn-0 DHMyd"></span><span class="sc-10ugfab-3 dirNi">India</span></div>
+                                     </div>
+                                     <div class="bke1zw-1 fxfmqU">
+                                        <div id="country-united-states" class="sc-10ugfab-4 hVtcrz"><span width="45" class="sc-13tn0rn-0 dIACQO"></span><span class="sc-10ugfab-3 dirNi">USA</span></div>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="sc-10ugfab-7 epQgJy">
+                                  <span width="45" class="sc-13tn0rn-0 mtUrN"></span><span class="sc-10ugfab-8 fyCgPB">India</span>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="elhb8j-11 bpckp"></div>
+                         <div class="sc-18n4g8v-0 gAhmYY">
+                            <div tabindex="0" aria-labelledby="language-dropdown-label" class="zqptxt-7 yDjtn">
+                               <label id="language-dropdown-label" class="zqptxt-1 kUAWYs">Select Language</label>
+                               <div tabindex="-1" aria-activedescendant="lang-active" class="zqptxt-4 bmHIAu">
+                                  <span class="zqptxt-3 iEupHL"></span>
+                                  <section class="zqptxt-2 ccGyrj"></section>
+                               </div>
+                               <div class="zqptxt-5 jUULOr">
+                                  <span class="zqptxt-6 giRTmH">English</span>
+                               </div>
+                            </div>
+                         </div>
+                      </section>
+                   </section>
+                   <div class="bke1zw-0 cMipmx elhb8j-22 dnqpZM">
+                      <div name="Company" class="bke1zw-1 elhb8j-19 fNpfdd">
+                         <h6 class="elhb8j-17 icGwVo">Company</h6>
+                         <nav>
+                            <a href="https://www.zomato.com/about" class="elhb8j-16 evQfKr">
+                               <p class="elhb8j-15 mcMLG">About</p>
+                            </a>
+                            <a href="http://blog.zomato.com/" class="elhb8j-16 evQfKr">
+                               <p class="elhb8j-15 mcMLG">Blog</p>
+                            </a>
+                            <a href="https://www.zomato.com/careers" class="elhb8j-16 evQfKr">
+                               <p class="elhb8j-15 mcMLG">Careers</p>
+                            </a>
+                            <a href="https://www.zomato.com/report-fraud" class="elhb8j-16 evQfKr">
+                               <p class="elhb8j-15 mcMLG">Report Fraud</p>
+                            </a>
+                            <a href="https://www.zomato.com/contact" class="elhb8j-16 evQfKr">
+                               <p class="elhb8j-15 mcMLG">Contact</p>
+                            </a>
+                         </nav>
+                      </div>
+                      <div name="For Foodies" class="bke1zw-1 elhb8j-19 hSaZLv">
+                         <h6 class="elhb8j-17 icGwVo">For Foodies</h6>
+                         <nav>
+                            <a href="https://www.zomato.com/policies" class="elhb8j-16 evQfKr">
+                               <p class="elhb8j-15 mcMLG">Code of Conduct</p>
+                            </a>
+                            <a href="http://community.zomato.com/" class="elhb8j-16 evQfKr">
+                               <p class="elhb8j-15 mcMLG">Community</p>
+                            </a>
+                            <a href="https://www.zomato.com/bloggers" class="elhb8j-16 evQfKr">
+                               <p class="elhb8j-15 mcMLG">Blogger Help</p>
+                            </a>
+                            <a href="https://developers.zomato.com/" class="elhb8j-16 evQfKr">
+                               <p class="elhb8j-15 mcMLG">Developers</p>
+                            </a>
+                            <a href="https://www.zomato.com/mobile" class="elhb8j-16 evQfKr">
+                               <p class="elhb8j-15 mcMLG">Mobile Apps</p>
+                            </a>
+                         </nav>
+                      </div>
+                      <div name="For Restaurants" class="bke1zw-1 elhb8j-19 jZfbkg">
+                         <h6 class="elhb8j-17 icGwVo">For Restaurants</h6>
+                         <nav>
+                            <a href="https://www.zomato.com/addrestaurant" class="elhb8j-16 evQfKr">
+                               <p class="elhb8j-15 mcMLG">Add Restaurant</p>
+                            </a>
+                            <a href="https://www.zomato.com/business" class="elhb8j-16 evQfKr">
+                               <p class="elhb8j-15 mcMLG">Claim your Listing</p>
+                            </a>
+                            <a href="https://www.zomato.com/business/apps" class="elhb8j-16 evQfKr">
+                               <p class="elhb8j-15 mcMLG">Business App</p>
+                            </a>
+                            <a href="https://www.zomato.com/business/widgets" class="elhb8j-16 evQfKr">
+                               <p class="elhb8j-15 mcMLG">Restaurant Widgets</p>
+                            </a>
+                            <a href="https://www.zomato.com/business" class="elhb8j-16 evQfKr">
+                               <p class="elhb8j-15 mcMLG">Products for Businesses</p>
+                            </a>
+                         </nav>
+                      </div>
+                      <div name="For You" class="bke1zw-1 elhb8j-19 fSfePz">
+                         <h6 class="elhb8j-17 icGwVo">For You</h6>
+                         <nav>
+                            <a href="https://www.zomato.com/privacy" class="elhb8j-16 evQfKr">
+                               <p class="elhb8j-15 mcMLG">Privacy</p>
+                            </a>
+                            <a href="https://www.zomato.com/conditions" class="elhb8j-16 evQfKr">
+                               <p class="elhb8j-15 mcMLG">Terms</p>
+                            </a>
+                            <a href="https://www.zomato.com/security" class="elhb8j-16 evQfKr">
+                               <p class="elhb8j-15 mcMLG">Security</p>
+                            </a>
+                            <a href="https://www.zomato.com/directory" class="elhb8j-16 evQfKr">
+                               <p class="elhb8j-15 mcMLG">Sitemap</p>
+                            </a>
+                         </nav>
+                      </div>
+                      <div class="bke1zw-1 elhb8j-4 gLrxEH">
+                         <div class="elhb8j-0 eviWSY">
+                            <a href="https://bnc.lt/download-zomato-ios" target="_blank" aria-label="app store link" class="sc-16nfz79-0 blTnzu">
+                               <div width="137" height="40" class="sc-16nfz79-1 fStFdQ"></div>
+                            </a>
+                            <a href="https://bnc.lt/download-z-android" target="_blank" aria-label="app store link" class="sc-16nfz79-0 blTnzu">
+                               <div width="137" height="40" class="sc-16nfz79-1 eWrJHn"></div>
+                            </a>
+                         </div>
+                      </div>
+                      <div class="bke1zw-1 elhb8j-4 kHbcAY">
+                         <p class="elhb8j-3 hZVQDy">Social links</p>
+                      </div>
+                      <div name="Social links" class="bke1zw-1 elhb8j-13 bbJqrp">
+                         <h6 class="elhb8j-8 xEZfN">Social links</h6>
+                         <div class="elhb8j-14 gjAfWx">
+                            <a href="https://www.facebook.com/zomato" target="_blank" class="elhb8j-16 febAgr">
+                               <div class="elhb8j-7 kaDfoh">
+                               </div>
+                               <div class="elhb8j-6 jwPQqa">
+                                  <i class="rbbb40-1 MxLSp" size="28" color="#1C1C1C">
+                                     <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="28" height="28" viewBox="0 0 20 20" aria-labelledby="icon-svg-title-FacebookCircle icon-svg-desc-FacebookCircle" role="img" class="rbbb40-0 hOEAIM">
+                                        <linearGradient id="ckcnb2qhaeh1w2qpfcwvw4nz2" x1="0" x2="100%" y1="0" y2="0">
+                                           <stop offset="0" stop-color="#1C1C1C"></stop>
+                                           <stop offset="100%" stop-color="#1C1C1C"></stop>
+                                        </linearGradient>
+                                        <title id="icon-svg-title-FacebookCircle">Facebook Circle icon</title>
+                                        <desc id="icon-svg-desc-FacebookCircle">It is an icon with title Facebook Circle</desc>
+                                        <path d="path" fill="url(#ckcnb2qhaeh1w2qpfcwvw4nz2)"></path>
+                                     </svg>
+                                  </i>
+                               </div>
+                            </a>
+                            <a href="https://twitter.com/zomato" target="_blank" class="elhb8j-16 febAgr">
+                               <div class="elhb8j-7 kaDfoh">
+                               </div>
+                               <div class="elhb8j-6 jwPQqa">
+                               </div>
+                            </a>
+                            <a href="https://www.instagram.com/zomato/" target="_blank" class="elhb8j-16 febAgr">
+                               <div class="elhb8j-7 kaDfoh">
+                               </div>
+                               <div class="elhb8j-6 jwPQqa">
+                               </div>
+                            </a>
+                         </div>
+                         <div class="elhb8j-11 bTmMWW"></div>
+                         <div class="elhb8j-11 bTmMWW"></div>
+                         <section class="elhb8j-10 cmLWeN">
+                            <a href="https://bnc.lt/download-zomato-ios" target="_blank" aria-label="app store link" class="sc-16nfz79-0 blTnzu">
+                               <div width="137" height="40" class="sc-16nfz79-1 fStFdQ"></div>
+                            </a>
+                            <div class="elhb8j-11 bTmMWW"></div>
+                            <a href="https://bnc.lt/download-z-android" target="_blank" aria-label="app store link" class="sc-16nfz79-0 blTnzu">
+                               <div width="137" height="40" class="sc-16nfz79-1 eWrJHn"></div>
+                            </a>
+                         </section>
+                      </div>
+                   </div>
+                   <hr class="elhb8j-12 hevhCV">
+                   <p class="elhb8j-5 belwaz">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2020 © Zomato™ Media Pvt Ltd. All rights reserved.</p>
+                </div>
+             </footer>
         </div>
+        <script src="./header/header.js"></script>
     </body>
 
 </html>
