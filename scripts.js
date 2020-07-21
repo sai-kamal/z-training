@@ -2,18 +2,56 @@
 
 
 function openPage(evt, cityName) {
-var i, tabcontent, tablinks;
-tabcontent = document.getElementsByClassName("sc-dTLGrV");
-for (i = 0; i < tabcontent.length; i++) {
-   tabcontent[i].style.display = "none";
+    var i, tabcontent, tablinks;
+    // tabcontent = document.getElementsByClassName("sc-dTLGrV");
+    tabcontent = document.querySelectorAll(".sc-dTLGrV");
+
+
+    for (i = 0; i < tabcontent.length; i++) {
+    // tabcontent[i].style.display = "none";
+        tabcontent[i].classList.add('hide');
+    }
+
+    // tablinks = document.getElementsByClassName("gmWmay");
+    tablinks = document.querySelectorAll(".gmWmay");
+
+    for (i = 0; i < tablinks.length; i++) {
+        // tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tablinks[i].classList.remove('active');
+    }
+
+    document.querySelector("#" + cityName).classList.remove('hide');
+    // document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.classList.add("active");
+    // alert("clicked " + cityName);
 }
-tablinks = document.getElementsByClassName("gmWmay");
-for (i = 0; i < tablinks.length; i++) {
-   tablinks[i].className = tablinks[i].className.replace(" active", "");
-}
-document.getElementById(cityName).style.display = "block";
-evt.currentTarget.className += " active";
-// alert("clicked " + cityName);
+
+function scrollElement(evt, secID){
+
+    // console.log("secId:" + secID)
+    var menuSec, navItem;
+
+    document.querySelector(".rlist").scrollTop=0;
+
+    menuSec = document.getElementById(secID);
+    // menuSec.scrollTop = 600;
+
+    var elemTop = menuSec.getBoundingClientRect().top;
+
+    // alert(elemTop);
+
+    document.querySelector(".rlist").scrollTop=elemTop-500;
+
+    // document.documentElement.scrollTop = elemTop+10;
+
+    // menuSec = document.querySelectorAll(".slist li");
+    // for (let i = 0; i < menuSec.length; i++) {
+    //     menuSec[i].classList.remove('active');
+    // }
+
+    // evt.currentTarget.className += " active";
+
+
 }
 
 
@@ -52,15 +90,6 @@ function filterPhotos(evt, className) {
     tablinks = document.querySelector("span." + className);
     tablinks.classList.add('krzOCY');
     tablinks.classList.remove('jgGYJH');
-
-
-    // tablinks = document.getElementsByClassName("sc-1kx5g6g-2");
-    // for (i = 0; i < tablinks.length; i++) {
-    //    tablinks[i].className = tablinks[i].className.replace(" active", "");
-    // }
-    // // document.getElementById(cityName).style.display = "block";
-    // evt.currentTarget.className += " active";
-    // // alert("clicked " + cityName);
 }
 
 
