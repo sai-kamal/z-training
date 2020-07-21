@@ -1549,7 +1549,7 @@ p {
 }
 
 .gmismd {
-    display: none;
+    /* display: none; */
     width: 100%;
 }
 
@@ -2593,10 +2593,19 @@ ul.slist{
     list-style-type: none;
     font-size: large;
     float: left;
+    padding-inline-start: 10px;
 }
 
 .slist li { 
     padding: 10px;
+}
+
+.slist li:hover { 
+    cursor: pointer;
+}
+
+.slist li.active { 
+    font-weight: bold;
 }
 
 .leftbar{
@@ -2611,11 +2620,20 @@ ul.slist{
 
 .rlist{
     margin-left: 240px;
+    overflow-y: scroll;
+    width: 100%;
+
 }
 a.order-c{
     text-decoration: none;
     color: #363636;
     opacity: 73%;
+}
+
+.order-div{
+    display: flex;
+    height: 50rem;
+
 }
 
 li.order-c{
