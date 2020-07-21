@@ -17,6 +17,54 @@ evt.currentTarget.className += " active";
 }
 
 
+function filterPhotos(evt, className) {
+    var i, photosC, tablinks;
+    photosC = document.querySelectorAll(".bke1zw-1");
+
+    for (i = 0; i < photosC.length; i++) {
+        photosC[i].classList.add('hide');
+    }
+
+    if(className == 'All')
+    {
+        for (i = 0; i < photosC.length; i++) {
+            photosC[i].classList.remove('hide');
+        }
+    }
+    else
+    {
+        photosC = document.querySelectorAll(".p" + className);
+        for (i = 0; i < photosC.length; i++) {
+            photosC[i].classList.remove('hide');
+        }
+    }
+
+    tablinks = document.querySelectorAll("span.sc-1kx5g6g-2");
+
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove('krzOCY');
+        tablinks[i].classList.remove('jgGYJH');
+
+        tablinks[i].classList.add('jgGYJH');
+
+    }
+
+    tablinks = document.querySelector("span." + className);
+    tablinks.classList.add('krzOCY');
+    tablinks.classList.remove('jgGYJH');
+
+
+    // tablinks = document.getElementsByClassName("sc-1kx5g6g-2");
+    // for (i = 0; i < tablinks.length; i++) {
+    //    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    // }
+    // // document.getElementById(cityName).style.display = "block";
+    // evt.currentTarget.className += " active";
+    // // alert("clicked " + cityName);
+}
+
+
+
 // -------------------------------------
 // ----------OVERVIEW-------------------
 // ------------------------------------
@@ -128,20 +176,50 @@ function reviewsNumPage(num) {
 }
 
 function HideReviews() {
-    for (revNum of list) {
+
+    var count = list.length;
+
+    for(var i = 0; i < count; i++) {
+        var revNum = list[i];
+
+        // alert('review_' + revNum)
+
+
         let elem = document.getElementById('review_' + revNum);
-        elem.style.display = "none";
+
+        if (elem != null)
+        {
+            elem.style.display = "none";
+
+        }
     }
+    
+    // for (var revNum in list) {
+    //     alert('review_' + revNum)
+
+    //     // let elem = document.getElementById('review_' + revNum);
+    //     // elem.style.display = "none";
+    // }
+    // alert("loadReviews");
+
 }
 
 function loadReviews() {
+
     HideReviews();
     
     let start = (curPage - 1) * reviewsPerPage;
-    curList = list.slice(start, start+reviewsPerPage);
-    for(revNum of curList) {
+    // curList = list.slice(start, start+reviewsPerPage);
+
+    for(var i = start; i < start+reviewsPerPage; i++) {
+        // alert(i)
+        var revNum = list[i];
+
         let elem = document.getElementById('review_' + revNum);
-        elem.style.display = "block";
+        if (elem != null)
+        {
+            elem.style.display = "block";
+        }
     }
     checkPageButtons();
 }
@@ -149,9 +227,14 @@ function loadReviews() {
 function checkPageButtons() {
     let prevButton = document.getElementById("reviewPrevPageButton");
     let nextButton = document.getElementById("reviewNextPageButton");
+
+    if(prevButton != null && nextButton != null)
+    {
+        if(curPage === 1) prevButton.style.visibility= "hidden";
+        else prevButton.style.visibility = "visible";
+        if(curPage === totalPages ) nextButton.style.visibility= "hidden";
+        else nextButton.style.visibility = "visible";
+    }
     
-    if(curPage === 1) prevButton.style.visibility= "hidden";
-    else prevButton.style.visibility = "visible";
-    if(curPage === totalPages ) nextButton.style.visibility= "hidden";
-    else nextButton.style.visibility = "visible";
+    
 }
