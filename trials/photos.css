@@ -1,5 +1,5 @@
 element.style {
-    overflow: auto;
+    /* overflow: auto; */
     background-color: transparent;
 }
 
@@ -1420,15 +1420,14 @@ p {
     font-size: 1.6rem;
     line-height: 1.5;
     font-weight: 300;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     color: rgb(105, 105, 105);
     margin: 0.3rem 1rem;
-    border-width: 1px;
-    border-style: solid;
-    border-color: transparent;
+    border-style: none;
+    /* border-color: transparent; */
     border-image: initial;
-    padding: 0.5rem 0.8rem;
-    border-radius: 6px;
+    padding: 0.6rem 0.9rem;
+    /* border-radius: 6px; */
 }
 
 .fvWQLV {
@@ -1438,9 +1437,23 @@ p {
     text-decoration: none;
 }
 
+/* .sc-1y3q50z-3:focus, .sc-1y3q50z-3:active, .sc-1y3q50z-3:visited{
+    outline: none;
+    border: none;
+} */
+
+.eiMLBn:focus, .gmWmay:focus, .sc-1y3q50z-3:focus, .cutCLq:focus, .add_btn:focus{
+    outline: none;
+}
+
 .sc-1y3q50z-3:first-child .hrBgkx {
     align-self: flex-start;
     width: 100%;
+}
+
+.sc-1y3q50z-3{
+    background: none;
+    border: none;
 }
 
 .hrBgkx {
@@ -1471,16 +1484,50 @@ p {
     font-size: 1.6rem;
     line-height: 1.5;
     font-weight: 300;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     color: rgb(237, 90, 107);
     margin: 0.3rem 1rem;
-    border-width: 1px;
-    border-style: solid;
-    border-color: transparent;
-    border-image: initial;
+    border-style: none;
     padding: 0.5rem 0.8rem;
     border-radius: 6px;
 }
+
+.hkYAJU {
+width: max-content;
+display: flex;
+}
+div, p, span {
+font-size: 1.6rem;
+}
+*, :after, :before {
+box-sizing: inherit;
+-webkit-tap-highlight-color: transparent;
+}
+iv {
+    display: block;
+}
+body, button, input, input::placeholder {
+    font-family: Okra,Helvetica,sans-serif;
+}
+body, button, textarea, input, input::-webkit-input-placeholder {
+    font-family: Okra,Helvetica,sans-serif;
+}
+/* body, html {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-weight: 300;
+    box-sizing: border-box;
+} */
+*, :after, :before {
+    box-sizing: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+*, :after, :before {
+    box-sizing: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
 
 .kACrFd {
     font-size: 1.8rem;

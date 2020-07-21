@@ -1,6 +1,7 @@
 .slist{
     list-style-type: none;
-    font-size: large;
+    font-size: medium;
+    font-weight: 8px;
     float: left;
     margin-left: 0;
     padding-left: 0;
@@ -14,15 +15,15 @@
 }
 
 #list_scroll_strict{
-    position: fixed;
+    position: sticky;
+    top: 10px;
     height: fit-content;
     width: 100%;
 }
 
 .leftbar{
     position: sticky;
-    top: 10rem;
-    margin-bottom: 20px;
+    top: 230px;
     height: fit-content;
     width: 30rem;
     border-right: 3px solid;
