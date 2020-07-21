@@ -128,6 +128,7 @@ header{
     width: 100%;
     height: 37rem;
 }
+
 .galView1{
     min-width: 62.4%;
     max-width: 100%;
@@ -146,6 +147,12 @@ header{
     margin-left: 0.6rem;
 
 }
+
+.galView1 img, .galView2 img {
+    filter: brightness(0.95);
+    transition: transform 0.4s ease-in-out 0s, filter 0.4s ease 0s;
+}
+
 
 .galView2a, .galView2b, .galView3a{
     min-width: 62.4%;
