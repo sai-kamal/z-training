@@ -6,23 +6,23 @@ body{
     font-size: 62.5%;
     font-weight: 300;
     box-sizing: border-box;
-    margin: 0px;
+    margin: auto;
     padding: 0px;
 }
-html {
+/* html {
     display: block;
 }
 
 main {
     display: block;
-}
+} */
 
 header{
     width: 100%;
     max-width: 100%;
     display: block;
     position: static;
-    height: 7.2rem;
+    height: 5rem;
     justify-content: space-between;
     align-items: center;
     border-style: outset; 
@@ -38,14 +38,16 @@ header{
     position: fixed;
     z-index: 1;
     padding: 10px;
-    overflow: auto;
+    overflow: hidden;
     width: 100%;
     height: 100%;
     left: 0;
     top: 0;
     background-color: rgba(0,0,0,0.4); /*transparency*/
 }
-
+.modal::-webkit-scrollbar{
+    display: none;
+}
 .modalContent{
     background-color: white;
     margin: auto;
@@ -95,7 +97,7 @@ header{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
+    margin: 0px;
 }
 .main{
     position: relative;
@@ -103,6 +105,14 @@ header{
     max-height: initial;
     margin: 1rem 3rem 0px;
 }
+
+#aboutRestro {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0%;
+    background-color: white;
+}
+
 .searchBar{
     display: flex;
     align-items: center;
@@ -192,6 +202,7 @@ header{
 .restroConnect{
     display: flex;
     align-items: left;
+    z-index: -1;
     /* justify-content: space-between; */
     justify-items: flex-start;
     margin: 1rem 0px 1rem;
