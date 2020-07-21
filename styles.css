@@ -1427,19 +1427,23 @@ p {
 
 .gmWmay {
     font-size: 1.6rem;
-    line-height: 1.5;
+    line-height: 2.0;
     font-weight: 300;
     white-space: nowrap;
     color: rgb(156, 156, 156);
-    margin: 0.3rem 1rem;
+    /* margin: 0.3rem 1rem; */
     border-width: 1px;
-    border-style: solid;
+    border-style: hidden;
     border-color: rgb(181, 181, 181);
     border-image: initial;
     padding: 0.5rem 0.8rem;
     border-radius: 6px;
 }
 
+
+.gmWmay:focus {
+    outline: none;
+}
 
 
 
@@ -2410,6 +2414,11 @@ p {
 }
 
 
+.bke1zw-1 {
+    padding: 0px 7.2px 7.2px 0px;
+}
+
+
 div, p, span {
     font-size: 1.6rem;
 }
@@ -2576,10 +2585,18 @@ div, p, span {
 /* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
+#order {
+    width: 98.8%;
+}
+
 ul.slist{
     list-style-type: none;
     font-size: large;
     float: left;
+}
+
+.slist li { 
+    padding: 10px;
 }
 
 .leftbar{
@@ -2727,7 +2744,7 @@ h2.order-c{
 }
 
 #reviews {
-    width: 100%;
+    width: 98.8%;
 }
 
 #reviews_head {
@@ -2807,7 +2824,7 @@ h2.order-c{
 .one_review {
     border-bottom: 1px solid rgb(232, 232, 232);
     margin-top: 2vh;
-    /* display: none; */
+    display: none;
 }
 
 .profile {
