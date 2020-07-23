@@ -28,6 +28,7 @@ function disableHrefRedirect() {
 
 //hides dropdowns when user clicks not on lists.
 document.onclick = function (e) {
+    e.preventDefault();
     let list = document.querySelector(`#filter_dropdown > .dropdown_content`);
     if (!ancestor(e.target, document.getElementById('filter_dropdown'))) {
         list.style.display = "none";
