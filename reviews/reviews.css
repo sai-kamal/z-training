@@ -413,25 +413,3 @@ body {
     width: 20px;
     height: 20px;
 }
-/* .flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.flex-container > div {
-    margin: 1vw;
-}
-
-.clear-rating button {
-    border: none;
-    color: rgba(16, 16, 16, 0.3);
-    background-color: inherit;
-}
-
-.clear-rating button span{
-    font-size: 1rem;
-    font-weight: bolder;
-} */
