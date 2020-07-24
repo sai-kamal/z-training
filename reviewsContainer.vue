@@ -51,11 +51,11 @@ export default {
         hideDropDowns(e) {
             let list = document.querySelector(`#filter-dropdown > .dropdown-content`);
             if (!this.ancestor(e.target, document.getElementById('filter-dropdown'))) {
-                list.style.display = "none";
+                list.classList.add('hide-section');
             }
             list = document.querySelector(`#sort-dropdown > .dropdown-content`);
             if (!this.ancestor(e.target, document.getElementById('sort-dropdown'))) {
-                list.style.display = "none";
+                list.classList.add('hide-section');
             }
         },
     },

@@ -78,7 +78,7 @@ export default {
                 reviewText: 'Great taste 👍👍',
                 reviewStats: {
                     numLikes: 0,
-                    numComments: 0,
+                    numComments: 1,
                 },
                 reviewCommentsList: [{
                     num: 1,
@@ -105,7 +105,7 @@ export default {
                 reviewText: 'Great taste 👍👍',
                 reviewStats: {
                     numLikes: 0,
-                    numComments: 0,
+                    numComments: 1,
                 },
                 reviewCommentsList: [{
                     num: 1,
@@ -132,7 +132,7 @@ export default {
                 reviewText: 'Great taste 👍👍',
                 reviewStats: {
                     numLikes: 0,
-                    numComments: 0,
+                    numComments: 1,
                 },
                 reviewCommentsList: [{
                     num: 1,

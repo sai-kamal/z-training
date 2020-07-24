@@ -20,8 +20,8 @@
                         <stop offset="0" stop-color="#B5B5B5"></stop>
                         <stop offset="100%" stop-color="#B5B5B5"></stop>
                     </linearGradient>
-                    <title :id="'icon-svg-title-DownTriangle' + obj.num">Down Triangle icon</title>
-                    <desc :id="'icon-svg-desc-DownTriangle' + obj.num">It is an icon with title Down Triangle</desc>
+                    <title id="icon-svg-title-DownTriangle">Down Triangle icon</title>
+                    <desc id="icon-svg-desc-DownTriangle">It is an icon with title Down Triangle</desc>
                     <path d="M20 5.42l-10 10-10-10h20z" fill="url(#arrow_svg)"></path>
                 </svg></i></span>
         </div>
@@ -50,13 +50,15 @@ export default {
     methods: {
         toggleList() {
             let list = document.querySelector(`#${this.obj.name} > .dropdown-content`);
-            if (list.style.display === "none") {
-                list.style.display = "block";
-            } else {
-                list.style.display = "none";
-            }
+            console.log(`#${this.obj.name} > .dropdown-content`, list.classList, list);
+            list.classList.toggle('hide-section');
+            console.log(list.classList, list);
         },
-    }
+    },
+    mounted() {
+        let list = document.querySelector(`#${this.obj.name} > .dropdown-content`);
+        list.classList.add('hide-section');
+    },
 }
 </script>
 
@@ -75,8 +77,12 @@ export default {
     margin-left: 10px;
 }
 
-.dropdown-content {
+.dropdown-content.hide-section {
     display: none;
+}
+
+.dropdown-content {
+    display: block;
     margin-top: 1vh;
     position: absolute;
     z-index: 1;

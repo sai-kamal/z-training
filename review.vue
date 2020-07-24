@@ -134,7 +134,7 @@
         <p class="review-text">{{ rev.reviewText }}</p>
         <p class="comment-stats">{{ rev.reviewStats.numLikes }} Likes, {{rev.reviewStats.numComments}} Comments</p>
         <div class="cta">
-            <div class="lcs">
+            <div class="lcs" @click='likeReview'>
                 <i class="lcs-symbol" size="16" color="#828282">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="#828282" width="16" height="16"
                         viewBox="0 0 20 20" aria-labelledby="icon-svg-title-ThumbUp icon-svg-desc-ThumbUp"
@@ -236,7 +236,9 @@ export default {
         }
     },
     methods: {
-        
+        likeReview() {
+            this.rev.reviewStats.numLikes++;
+        }
     },
     mounted() {
         //toggle visibility of comments section of a review
@@ -244,10 +246,7 @@ export default {
         let commentsDiv = document.querySelector(`#${this.id} .comments-section`);
         commentsDiv.classList.add('hide-section');
         elem.addEventListener("click", () => {
-            if (commentsDiv.classList.contains('hide-section'))
-                commentsDiv.classList.remove('hide-section');
-            else
-                commentsDiv.classList.add('hide-section');
+            commentsDiv.classList.toggle('hide-section');
         });
         // add event listeners to submit comment button
         elem = document.querySelector(`#${this.id} .comments-section .write-comment-btn`);
@@ -261,6 +260,7 @@ export default {
                 text: this.commentText,
             }
             this.rev.reviewCommentsList.push(commentObj);
+            this.rev.reviewStats.numComments++;
             this.commentText = '';
         });
     }
