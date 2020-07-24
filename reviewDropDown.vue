@@ -1,10 +1,10 @@
 <template>
-    <div class="dropdown-and-arrow" @click="toggleList()">
+    <div class="dropdown-and-arrow" @click="toggleList">
         <div :id='obj.name'>
             <span>{{ curVal }}</span>
             <div class="dropdown-content">
                 <a href="#" v-for='(val, index) in obj.options' 
-                @click='changeListHead(val)' :key='index' 
+                @click='curVal = val' :key='index' 
                 :class='{ chosen: curVal === val}'>{{ val }}</a>
             </div>
         </div>
@@ -56,9 +56,6 @@ export default {
                 list.style.display = "none";
             }
         },
-        changeListHead(val) {
-            this.curVal = val;
-        }
     }
 }
 </script>

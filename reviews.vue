@@ -4,7 +4,7 @@
             <Review v-for="(rev, index) in reviewsList" :key='index' :rev='rev'/>
         </div>
         <div class="pagination">
-            <div class="page-btn" id="rev-prev-page-btn" onclick="reviewsPrevPage()">
+            <div class="page-btn" id="rev-prev-page-btn" @click="reviewsPrevPage">
                 <a href="#" class="arrow">
                     <i class="prev-arrow" color="#1C1C1C" size="20"><svg xmlns="http://www.w3.org/2000/svg"
                                 fill="#1C1C1C" width="20" height="20" viewBox="0 0 20 20"
@@ -23,13 +23,13 @@
                             </svg></i>
                 </a>
             </div>
-            <div class="page-num" onclick="reviewsNumPage(1)">
+            <div class="page-num" @click="reviewsNumPage(1)">
                 <a href="#"><span>1</span></a>
             </div>
-            <div class="page-num" onclick="reviewsNumPage(2)">
+            <div class="page-num" @click="reviewsNumPage(2)">
                 <a href="#"><span>2</span></a>
             </div>
-            <div class="page-btn" id="reviewNextPageButton" onclick="reviewsNextPage()">
+            <div class="page-btn" id="rev-next-page-btn" @click="reviewsNextPage">
                 <a href="#" class="arrow">
                     <i class="next-arrow" color="#1C1C1C" size="20"><svg xmlns="http://www.w3.org/2000/svg"
                             fill="#1C1C1C" width="20" height="20" viewBox="0 0 20 20"
@@ -115,15 +115,92 @@ export default {
                     text: 'Come on man, this is great. Everyone has to try this once in their life. Hoping it survives the corona period',
                 }
                 ],
+            },
+            {
+                num: 3,
+                profile: {
+                    img: 'https://b.zmtcdn.com/data/user_profile_pictures/3e8/b0000c8d0003578f54e63141373fe3e8.jpg?fit=around%7C100%3A100&amp;crop=100%3A100%3B%2A%2C%2A',
+                    name: 'Ajay Kanojiya 3',
+                    numReviews: 1,
+                    numFollowers: 0,
+                },
+                reviewRating: {
+                    ratingNum: 5.0,
+                    time: '5 hours ago',
+                },
+                reviewTags: ['biryani', 'delicious food'],
+                reviewText: 'Great taste 👍👍',
+                reviewStats: {
+                    numLikes: 0,
+                    numComments: 0,
+                },
+                reviewCommentsList: [{
+                    num: 1,
+                    img: 'https://b.zmtcdn.com/data/pictures/chains/5/312995/aa4fc3fc70d8e32772a724d6cbc55ab0_featured_v2.jpg?fit=around%7C100%3A100&amp;crop=100%3A100%3B%2A%2C%2A',
+                    username: 'Biryani by Kilo',
+                    userTag: 'Management',
+                    text: 'Come on man, this is great. Everyone has to try this once in their life. Hoping it survives the corona period',
+                }
+                ],
             }],
-            
+            curPage: 1,
+            list: [1, 2, 3],
+            curList: [],
+            reviewsPerPage: 2,
         }
+    },
+    computed: {
+        totalPages() {
+            return Math.ceil(this.list.length / this.reviewsPerPage);
+        },
+    },
+    methods: {
+        HideReviews() {
+            for (let revNum of this.list) {
+                let elem = document.getElementById('review-' + revNum);
+                elem.style.display = "none";
+            }
+        },
+        checkPageButtons() {
+            let prevButton = document.getElementById("rev-prev-page-btn");
+            let nextButton = document.getElementById("rev-next-page-btn");
+            if (this.curPage === 1) prevButton.style.visibility = "hidden";
+            else prevButton.style.visibility = "visible";
+            if (this.curPage === this.totalPages) nextButton.style.visibility = "hidden";
+            else nextButton.style.visibility = "visible";
+        },
+        loadReviews() {
+            this.HideReviews();
+            let start = (this.curPage - 1) * this.reviewsPerPage;
+            this.curList = this.list.slice(start, start + this.reviewsPerPage);
+            for (let revNum of this.curList) {
+                let elem = document.getElementById('review-' + revNum);
+                elem.style.display = "block";
+            }
+            this.checkPageButtons();
+        },
+        reviewsNextPage() {
+            this.curPage = Math.min(this.totalPages, this.curPage + 1);
+            this.loadReviews();
+        },
+        //loads prev page of reviews
+        reviewsPrevPage() {
+            this.curPage = Math.max(1, this.curPage - 1);
+            this.loadReviews();
+        },
+        // loads the exact num page
+        reviewsNumPage(num) {
+            this.curPage = num;
+            this.loadReviews();
+        },
+    },
+    mounted() {
+        this.loadReviews();
     }
 }
 </script>
 
 <style scoped>
-
 .detailed-reviews {
     margin-top: 20px;
 }

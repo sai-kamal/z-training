@@ -1,9 +1,9 @@
 <template>
-    <div class="reviews-container">
+    <div class="reviews-container" @click="hideDropDowns($event)">
         <section id="reviews-left-pane">
             <h4 id='review-head'>Reviews</h4>
             <div class="filter-sort-container">
-                <ReviewDropDown v-for="(ddObj, index) in reviewDropDowns"  :key='index' :obj='ddObj'/>
+                <ReviewDropDown v-for="(ddObj, index) in reviewDropDowns" :key='index' :obj='ddObj'/>
             </div>
             <Reviews />
         </section>
@@ -39,7 +39,28 @@ export default {
             }],
         }
     },
+    methods: {
+        // helper function to hide dropdowns.
+        ancestor(e, target) {
+            if (!e) return false;
+            else {
+                if (e === target) return true;
+                else return this.ancestor(e.parentNode, target);
+            }
+        },
+        hideDropDowns(e) {
+            let list = document.querySelector(`#filter-dropdown > .dropdown-content`);
+            if (!this.ancestor(e.target, document.getElementById('filter-dropdown'))) {
+                list.style.display = "none";
+            }
+            list = document.querySelector(`#sort-dropdown > .dropdown-content`);
+            if (!this.ancestor(e.target, document.getElementById('sort-dropdown'))) {
+                list.style.display = "none";
+            }
+        },
+    },
     mounted() {
+        // prevents href redirection - scrolling effect
         document.querySelectorAll('.reviews-container a').forEach(item => {
             item.addEventListener('click', event => {
                 event.preventDefault();

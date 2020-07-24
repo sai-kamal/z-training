@@ -197,7 +197,7 @@
                         loading="lazy">
                 </div>
                 <div class="write-comment-input">
-                    <textarea placeholder="Write your comment" width="100%" rows="1" tabindex="1"></textarea>
+                    <textarea placeholder="Write your comment" width="100%" rows="1" tabindex="1" v-model="commentText"></textarea>
                 </div>
                 <div class="write-comment-btn">
                     <p>Comment</p>
@@ -232,13 +232,46 @@ export default {
     },
     data() {
         return {
-
+            commentText: '',
         }
+    },
+    methods: {
+        
+    },
+    mounted() {
+        //toggle visibility of comments section of a review
+        let elem = document.querySelector(`#${this.id} .cta .comment-btn`);
+        let commentsDiv = document.querySelector(`#${this.id} .comments-section`);
+        commentsDiv.classList.add('hide-section');
+        elem.addEventListener("click", () => {
+            if (commentsDiv.classList.contains('hide-section'))
+                commentsDiv.classList.remove('hide-section');
+            else
+                commentsDiv.classList.add('hide-section');
+        });
+        // add event listeners to submit comment button
+        elem = document.querySelector(`#${this.id} .comments-section .write-comment-btn`);
+        elem.addEventListener("click", () => {
+            if (this.commentText === '') return;
+            let commentObj = {
+                num: this.rev.reviewCommentsList.length+1,
+                img: 'https://b.zmtcdn.com/data/pictures/chains/5/312995/aa4fc3fc70d8e32772a724d6cbc55ab0_featured_v2.jpg?fit=around%7C100%3A100&amp;crop=100%3A100%3B%2A%2C%2A',
+                username: 'Biryani by Kilo',
+                userTag: 'Management',
+                text: this.commentText,
+            }
+            this.rev.reviewCommentsList.push(commentObj);
+            this.commentText = '';
+        });
     }
 }
 </script>
 
 <style scoped>
+.hide-section {
+    display: none;
+}
+
 .review {
     border-bottom: 1px solid rgb(232, 232, 232);
     margin-top: 20px;
