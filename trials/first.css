@@ -1,0 +1,39 @@
+.boxer{
+    height: fit-content;
+    border: none;
+    margin-top: 10px;
+    display: none;
+}
+
+#c1{
+    border-color: greenyellow;
+    display: block;
+}
+
+#c2{
+    border-color: blueviolet;
+}
+#c2 a{
+    text-decoration: none;
+    color: #363636;
+    opacity: 73%;
+}
+
+#c3{
+    border-color: pink;
+}
+
+#c4{
+    border-color: red;
+}
+
+.myTabBut{
+    border: none;
+    background: none;
+    font-size: large;
+    outline: none;
+}
+
+.myTabBut hover{
+    border-bottom: 2px solid red;
+}
